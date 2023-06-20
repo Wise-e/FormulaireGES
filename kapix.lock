@@ -1,0 +1,532 @@
+{
+  "cliVersion": "0.0.237",
+  "projects": [
+    {
+      "id": "dev.ateliersjaco@gmail.com/formulairerse",
+      "codegenVersion": "4.0.1-alpha+1.1687261765442",
+      "dependencies": {},
+      "lang": "vuejs-3",
+      "stack": "front-end",
+      "version": 12,
+      "fileLocks": [
+        {
+          "id": "4aV9DQc6jg4t2nmPkPZzfo",
+          "path": "src/components/HautDePage/index.vue",
+          "type": "component",
+          "hash": "2893360e7f07899154ac56d9bbaea9bf1451355d",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "4aV9DQc6jg4t2nmPkPZzfo",
+          "name": "en-US",
+          "path": "locales/en-US/HautDePage.json",
+          "type": "i18n",
+          "hash": "258be1009a8ae26a9a1afdf92932f29465b5728e",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "4aV9DQc6jg4t2nmPkPZzfo",
+          "name": "fr-FR",
+          "path": "locales/fr-FR/HautDePage.json",
+          "type": "i18n",
+          "hash": "eba9152c29027c03f72766a71bb3612e318035ef",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "4aV9DQc6jg4t2nmPkPZzfo",
+          "path": "src/components/HautDePage/store.custom.ts",
+          "type": "store",
+          "custom": true,
+          "hash": "af868831c608cbd19e56543dcb6f37ab06bd39ca",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "4aV9DQc6jg4t2nmPkPZzfo",
+          "path": "src/components/HautDePage/store.ts",
+          "type": "store",
+          "hash": "ced39f6c9bc4268526500ed85066c2b25678fdb4",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "4aV9DQc6jg4t2nmPkPZzfo",
+          "path": "src/components/HautDePage/style.custom.scss",
+          "type": "style",
+          "custom": true,
+          "hash": "dbabd81fa309a7e40110b779f36dee9946505c69",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "4aV9DQc6jg4t2nmPkPZzfo",
+          "path": "src/components/HautDePage/style.scss",
+          "type": "style",
+          "hash": "0148316dc3bf7142cc154dfdd0a76769f2ea0f31",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "5pvggbcvFh9Z7SFTjc15vH",
+          "name": "en-US",
+          "path": "src/pages/HautDePage/en-US.vue",
+          "type": "page",
+          "hash": "8a0b1bd0f681858ac65e79230709dafceedad50f",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "5pvggbcvFh9Z7SFTjc15vH",
+          "name": "fr-FR",
+          "path": "src/pages/HautDePage/fr-FR.vue",
+          "type": "page",
+          "hash": "8a0b1bd0f681858ac65e79230709dafceedad50f",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "5pvggbcvFh9Z7SFTjc15vH",
+          "name": "index",
+          "path": "src/pages/HautDePage/index.vue",
+          "type": "page",
+          "hash": "338038683dc8f781404e16bdfdd6de843fb700e4",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "5pvggbcvFh9Z7SFTjc15vH",
+          "path": "src/pages/HautDePage/store.custom.ts",
+          "type": "store",
+          "custom": true,
+          "hash": "0cc0cf01b2cee01442ea65c363d3b3ef6e29bcff",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "5pvggbcvFh9Z7SFTjc15vH",
+          "path": "src/pages/HautDePage/store.ts",
+          "type": "store",
+          "hash": "9e992cda72828dc2e480f46bed35e02897bf05e8",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "5pvggbcvFh9Z7SFTjc15vH",
+          "path": "src/pages/HautDePage/style.custom.scss",
+          "type": "style",
+          "custom": true,
+          "hash": "dbabd81fa309a7e40110b779f36dee9946505c69",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "5pvggbcvFh9Z7SFTjc15vH",
+          "path": "src/pages/HautDePage/style.scss",
+          "type": "style",
+          "hash": "cb691f41805f23f8fdf711bbb50552afe8a4b638",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "c7Hh56HLcjWSNWWsEGA6kt",
+          "path": "src/components/HautDePageAmeliore/index.vue",
+          "type": "component",
+          "hash": "201fe1b46406e12b8dd3785b15fba2630edaaa4c",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "c7Hh56HLcjWSNWWsEGA6kt",
+          "path": "src/components/HautDePageAmeliore/store.custom.ts",
+          "type": "store",
+          "custom": true,
+          "hash": "325c48d85024a4c9492dd479c58e884203dd4bda",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "c7Hh56HLcjWSNWWsEGA6kt",
+          "path": "src/components/HautDePageAmeliore/store.ts",
+          "type": "store",
+          "hash": "59ee68aec899c7496d4575339619eccefd502083",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "c7Hh56HLcjWSNWWsEGA6kt",
+          "path": "src/components/HautDePageAmeliore/style.custom.scss",
+          "type": "style",
+          "custom": true,
+          "hash": "dbabd81fa309a7e40110b779f36dee9946505c69",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "c7Hh56HLcjWSNWWsEGA6kt",
+          "path": "src/components/HautDePageAmeliore/style.scss",
+          "type": "style",
+          "hash": "194635d6070899598f2634af8feba5a45be5b095",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "kZtFDDYeAYYAkeEZJycmEG",
+          "name": "en-US",
+          "path": "src/pages/Header/en-US.vue",
+          "type": "page",
+          "hash": "8a0b1bd0f681858ac65e79230709dafceedad50f",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "kZtFDDYeAYYAkeEZJycmEG",
+          "name": "fr-FR",
+          "path": "src/pages/Header/fr-FR.vue",
+          "type": "page",
+          "hash": "8a0b1bd0f681858ac65e79230709dafceedad50f",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "kZtFDDYeAYYAkeEZJycmEG",
+          "name": "index",
+          "path": "src/pages/Header/index.vue",
+          "type": "page",
+          "hash": "ea1aecd55b2e54f9fa878b8a6ceef77b4278da7d",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "kZtFDDYeAYYAkeEZJycmEG",
+          "path": "src/pages/Header/store.custom.ts",
+          "type": "store",
+          "custom": true,
+          "hash": "23b96880450b0300a65ef7194d414f8159c26b82",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "kZtFDDYeAYYAkeEZJycmEG",
+          "path": "src/pages/Header/store.ts",
+          "type": "store",
+          "hash": "51f1c8caee3d7a9c7402a4c5b68cd3821cc57fc5",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "kZtFDDYeAYYAkeEZJycmEG",
+          "path": "src/pages/Header/style.custom.scss",
+          "type": "style",
+          "custom": true,
+          "hash": "dbabd81fa309a7e40110b779f36dee9946505c69",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "kZtFDDYeAYYAkeEZJycmEG",
+          "path": "src/pages/Header/style.scss",
+          "type": "style",
+          "hash": "93d8c40d32ebedca5a14071a621d0be362a66215",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "mJoy9Y7p3DHeyhTMDY8VGF",
+          "name": "fr-FR",
+          "path": "locales/fr-FR/Dashboard.json",
+          "type": "i18n",
+          "hash": "d88a32851e575ace4493ad28746ca99b9890128c",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "mJoy9Y7p3DHeyhTMDY8VGF",
+          "name": "en-US",
+          "path": "src/pages/Dashboard/en-US.vue",
+          "type": "page",
+          "hash": "8a0b1bd0f681858ac65e79230709dafceedad50f",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "mJoy9Y7p3DHeyhTMDY8VGF",
+          "name": "fr-FR",
+          "path": "src/pages/Dashboard/fr-FR.vue",
+          "type": "page",
+          "hash": "8a0b1bd0f681858ac65e79230709dafceedad50f",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "mJoy9Y7p3DHeyhTMDY8VGF",
+          "name": "index",
+          "path": "src/pages/Dashboard/index.vue",
+          "type": "page",
+          "hash": "249d5dfb0b422b9418eea051e37499675e022a0a",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "mJoy9Y7p3DHeyhTMDY8VGF",
+          "path": "src/pages/Dashboard/store.custom.ts",
+          "type": "store",
+          "custom": true,
+          "hash": "f6d5e8b5c6f0cab8b48968c7b0c5afa7b8819382",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "mJoy9Y7p3DHeyhTMDY8VGF",
+          "path": "src/pages/Dashboard/store.ts",
+          "type": "store",
+          "hash": "40b039841582393608acef40f6340a7f0695ab63",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "mJoy9Y7p3DHeyhTMDY8VGF",
+          "path": "src/pages/Dashboard/style.custom.scss",
+          "type": "style",
+          "custom": true,
+          "hash": "dbabd81fa309a7e40110b779f36dee9946505c69",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "mJoy9Y7p3DHeyhTMDY8VGF",
+          "path": "src/pages/Dashboard/style.scss",
+          "type": "style",
+          "hash": "e4ac5a2c54e91c565a77b529aec106f6b5031528",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "mSW7ZWEFXiMEFv17jvDB89",
+          "name": "en-US",
+          "path": "src/pages/Index/en-US.vue",
+          "type": "page",
+          "hash": "aaa08fa08be066c07f1b90cd3b3a2d2c139dcef5",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "mSW7ZWEFXiMEFv17jvDB89",
+          "name": "fr-FR",
+          "path": "src/pages/Index/fr-FR.vue",
+          "type": "page",
+          "hash": "eaa60bb70ea1b06f4d425288eb836b3f76a4e670",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "mSW7ZWEFXiMEFv17jvDB89",
+          "name": "index",
+          "path": "src/pages/index.vue",
+          "type": "page",
+          "hash": "771c4a5d65860779cdc99012036e052c71f67140",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "mSW7ZWEFXiMEFv17jvDB89",
+          "path": "src/pages/Index/store.custom.ts",
+          "type": "store",
+          "custom": true,
+          "hash": "39fa06c4fd8e8b8fc36598699d9cc03525a7193f",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "mSW7ZWEFXiMEFv17jvDB89",
+          "path": "src/pages/Index/store.ts",
+          "type": "store",
+          "hash": "8843848e5b47fa7361041f8faca71fcb195609ba",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "mSW7ZWEFXiMEFv17jvDB89",
+          "path": "src/pages/Index/style.custom.scss",
+          "type": "style",
+          "custom": true,
+          "hash": "dbabd81fa309a7e40110b779f36dee9946505c69",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "mSW7ZWEFXiMEFv17jvDB89",
+          "path": "src/pages/Index/style.scss",
+          "type": "style",
+          "hash": "5ff56cccf933f4686eb9611c127443f555b3e2a5",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "u2cmY13JEqFsnTzo9doUdX",
+          "name": "fr-FR",
+          "path": "locales/fr-FR/TestsMiseEnForme.json",
+          "type": "i18n",
+          "hash": "d5259049327f2755483d810386f8dec156eab076",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "u2cmY13JEqFsnTzo9doUdX",
+          "name": "en-US",
+          "path": "src/pages/TestsMiseEnForme/en-US.vue",
+          "type": "page",
+          "hash": "8a0b1bd0f681858ac65e79230709dafceedad50f",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "u2cmY13JEqFsnTzo9doUdX",
+          "name": "fr-FR",
+          "path": "src/pages/TestsMiseEnForme/fr-FR.vue",
+          "type": "page",
+          "hash": "8a0b1bd0f681858ac65e79230709dafceedad50f",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "u2cmY13JEqFsnTzo9doUdX",
+          "name": "index",
+          "path": "src/pages/TestsMiseEnForme/index.vue",
+          "type": "page",
+          "hash": "7d604db650f84179b1d25adc1fe27a179e5c45f5",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "u2cmY13JEqFsnTzo9doUdX",
+          "path": "src/pages/TestsMiseEnForme/store.custom.ts",
+          "type": "store",
+          "custom": true,
+          "hash": "1d25210db535d27d2d335b62ff2d7af97eb19b35",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "u2cmY13JEqFsnTzo9doUdX",
+          "path": "src/pages/TestsMiseEnForme/store.ts",
+          "type": "store",
+          "hash": "f16d18b00ff6599da130da51eeb1fad037d6d174",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "u2cmY13JEqFsnTzo9doUdX",
+          "path": "src/pages/TestsMiseEnForme/style.custom.scss",
+          "type": "style",
+          "custom": true,
+          "hash": "dbabd81fa309a7e40110b779f36dee9946505c69",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "u2cmY13JEqFsnTzo9doUdX",
+          "path": "src/pages/TestsMiseEnForme/style.scss",
+          "type": "style",
+          "hash": "e24a24e497db4af25065585b0181d6bbcb0895dc",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "xyTKFGvJ6A6xBoVcsu7gA8",
+          "name": "404",
+          "path": "src/pages/[...all].vue",
+          "type": "page",
+          "hash": "47b24de1cab58547edf4e78d88c34848e1a00f77",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "xyTKFGvJ6A6xBoVcsu7gA8",
+          "path": "src/pages/Page404/store.custom.ts",
+          "type": "store",
+          "custom": true,
+          "hash": "8fa7ae406c3ddb01328ce15ce040eac109f48ae2",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "xyTKFGvJ6A6xBoVcsu7gA8",
+          "path": "src/pages/Page404/store.ts",
+          "type": "store",
+          "hash": "e817f262ed0b9ee0f0d935da345213645520c3d1",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "xyTKFGvJ6A6xBoVcsu7gA8",
+          "path": "src/pages/Page404/style.custom.scss",
+          "type": "style",
+          "custom": true,
+          "hash": "dbabd81fa309a7e40110b779f36dee9946505c69",
+          "postLintHash": "tempHash"
+        },
+        {
+          "id": "xyTKFGvJ6A6xBoVcsu7gA8",
+          "path": "src/pages/Page404/style.scss",
+          "type": "style",
+          "hash": "8a4aa375f1528470b21331b43dc7e799271cb999",
+          "postLintHash": "tempHash"
+        },
+        {
+          "path": "public/favicon.png",
+          "type": "asset",
+          "hash": "7717ec8298239bd7f2be6505721d6dbe7b5cfea5",
+          "postLintHash": "tempHash"
+        },
+        {
+          "path": "public/pwa-192x192.png",
+          "type": "asset",
+          "hash": "042ae7f389b185e25273abf5dbd0306f57a6ace5",
+          "postLintHash": "tempHash"
+        },
+        {
+          "path": "public/pwa-512x512.png",
+          "type": "asset",
+          "hash": "69fbb9f10519913843915b02cc24afd9ac925c5e",
+          "postLintHash": "tempHash"
+        },
+        {
+          "path": ".github/workflows/kapix-action.yml",
+          "type": "internal",
+          "custom": true,
+          "hash": "c7f2e63cf6d16c0367919de1463ae70679f6c22a",
+          "postLintHash": "tempHash"
+        },
+        {
+          "path": ".gitlab-ci.yml",
+          "type": "internal",
+          "custom": true,
+          "hash": "40e636ca6752a0d882418010812b80c155763a29",
+          "postLintHash": "tempHash"
+        },
+        {
+          "path": ".vscode/settings.json",
+          "type": "internal",
+          "hash": "6809407e2305280c98ac1acec75a2c0b9bf9eeec",
+          "postLintHash": "tempHash"
+        },
+        {
+          "path": "index.html",
+          "type": "internal",
+          "custom": true,
+          "hash": "c2b84ed07fea4133bf02d6de14746dcbba699081",
+          "postLintHash": "tempHash"
+        },
+        {
+          "path": "src/app-info.json",
+          "type": "internal",
+          "hash": "5ad096c8de5cd5d16832b8c57150f7e8eb93df42",
+          "postLintHash": "tempHash"
+        },
+        {
+          "path": "src/dynamicRoutes.ts",
+          "type": "internal",
+          "custom": true,
+          "hash": "a83f19b70108afc290ecca06964cb95324d245aa",
+          "postLintHash": "tempHash"
+        },
+        {
+          "path": "src/main.ts",
+          "type": "internal",
+          "custom": true,
+          "hash": "d0b837704a9f4c94f117b9cee584b8bf32427d8b",
+          "postLintHash": "tempHash"
+        },
+        {
+          "path": "src/shims.d.ts",
+          "type": "internal",
+          "hash": "1b7a682cadde5b3ee01b981ddbf1c7ef4307b116",
+          "postLintHash": "tempHash"
+        },
+        {
+          "path": "src/stores/appAuthentication.custom.ts",
+          "type": "store",
+          "custom": true,
+          "hash": "989028e21a93c7c7b88bac7e80e4139192f1b026",
+          "postLintHash": "tempHash"
+        },
+        {
+          "path": "src/stores/appAuthentication.ts",
+          "type": "store",
+          "hash": "50e41108d3bd1eab7f1904ed4f76fe08e8d1ab9e",
+          "postLintHash": "tempHash"
+        },
+        {
+          "path": "src/stores/appData.custom.ts",
+          "type": "store",
+          "custom": true,
+          "hash": "e25f2e9d8a32fd53e09db647b267d32540d984de",
+          "postLintHash": "tempHash"
+        },
+        {
+          "path": "src/stores/appData.ts",
+          "type": "store",
+          "hash": "b7f416cfcf0dfd893ab6f6d3a5de405cd9a20421",
+          "postLintHash": "tempHash"
+        },
+        {
+          "path": "src/stores/index.ts",
+          "type": "store",
+          "hash": "e14eee2b36f433a0619e96e2aeabc3806edc3c83",
+          "postLintHash": "tempHash"
+        }
+      ]
+    }
+  ]
+}

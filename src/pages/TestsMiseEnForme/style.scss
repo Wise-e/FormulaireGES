@@ -1,0 +1,354 @@
+// Tests mise en forme
+.tests-mise-en-forme-p2 {
+  &.outer-style {
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    min-height: 0;
+    min-width: 0;
+    z-index: 997;
+  }
+  &.inner-style {
+    height: 100%;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+}
+// Tests mise en forme > List
+.list-p2 {
+  &.outer-style {
+    height: 100%;
+    width: 100%;
+    min-height: 0;
+    min-width: 0;
+    z-index: 1000;
+  }
+  &.inner-style {
+    height: 100%;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+    overflow: auto;
+  }
+}
+// Tests mise en forme > MatiereUser Form
+.matiere-user-form-p2 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    z-index: 999;
+  }
+  &.property-style {
+    padding: 10px;
+  }
+  &.scroller-style {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: inherit;
+    overflow: auto;
+  }
+}
+// Tests mise en forme > MatiereUser Form > Form content
+.form-content-p2 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    z-index: 999;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+  }
+}
+// Tests mise en forme > MatiereUser Form > Form content > Matiere
+.matiere-p2 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 1000;
+  }
+}
+// Tests mise en forme > MatiereUser Form > Form content > User 2
+.user-2-p2 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 999;
+  }
+}
+// Tests mise en forme > MatiereUser Form > Form content > Poids Matiere
+.poids-matiere-p2 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 998;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Tests mise en forme > MatiereUser Form > Form content > Caracteristique Choix
+.caracteristique-choix-p2 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 997;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Tests mise en forme > MatiereUser Form > Form content > Provenance Magasin
+.provenance-magasin-p2 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 996;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Tests mise en forme > MatiereUser Form > Form content > Distance Magasin
+.distance-magasin-p2 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 995;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Tests mise en forme > MatiereUser Form > Form content > Conso Transport
+.conso-transport-p2 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 994;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Tests mise en forme > MatiereUser Form > Form content > Provenance Matiere
+.provenance-matiere-p2 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 993;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Tests mise en forme > MatiereUser Form > Form content > Transport Magasin
+.transport-magasin-p2 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 992;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Tests mise en forme > MatiereUser Form > Form content > Nombre Entreprise Commande
+.nombre-entreprise-commande-p2 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 991;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Tests mise en forme > MatiereUser Form > Form content > Plus Proche Q
+.plus-proche-q-p2 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 990;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Tests mise en forme > MatiereUser Form > Form content > Certitudedu Choix Q
+.certitudedu-choix-q-p2 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 989;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Tests mise en forme > MatiereUser Form > Form content > Changer Approvisionnement Q
+.changer-approvisionnement-q-p2 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 988;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Tests mise en forme > MatiereUser Form > Form content > text
+.text-p2 {
+  &.outer-style {
+    z-index: 987;
+  }
+  &.property-style {
+    overflow: hidden;
+    padding: 15px;
+  }
+}
+// Tests mise en forme > MatiereUser Form > Save button
+.save-p2 {
+  &.outer-style {
+    padding: 40px 5px 5px 5px;
+    z-index: 999;
+  }
+  &.property-style {
+    border-radius: 4px;
+    overflow: hidden;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 3px 3px -2px rgba(0, 0, 0, 0.12);
+    padding: 10px;
+    cursor: pointer;
+  }
+}
+// Tests mise en forme > Virtual infinite scroll list
+.virtual-infinite-scroll-list-p2 {
+  &.outer-style {
+    height: 100%;
+    width: 100%;
+    min-height: 0;
+    min-width: 0;
+    z-index: 998;
+  }
+  &.inner-style {
+    height: 100%;
+  }
+}
+// Tests mise en forme > Separator
+.separator-p2 {
+  &.outer-style {
+    height: 100%;
+    width: 100%;
+    min-height: 0;
+    min-width: 0;
+    z-index: 997;
+  }
+  &.inner-style {
+    height: 100%;
+  }
+}

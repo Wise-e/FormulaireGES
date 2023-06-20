@@ -1,0 +1,209 @@
+// Haut de Page
+.haut-de-page-c0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    justify-content: center;
+    padding: 10px 10px 10px 10px;
+  }
+  &.inner-style {
+    max-width: 1200px;
+  }
+  &.property-style {
+    font-weight: bold;
+  }
+  &.scroller-style {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: inherit;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+// Haut de Page > Partie A
+.partie-a-c0 {
+  &.outer-style {
+    z-index: 1000;
+  }
+  &.scroller-style {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: inherit;
+  }
+  @include media-breakpoint-down(xs) {
+    &.outer-style {
+      width: 100%;
+      min-width: 0;
+      overflow: inherit;
+    }
+    &.template-style {
+      max-width: none;
+    }
+  }
+}
+// Haut de Page > Partie A > Logo de l'entreprise
+.logo-de-lentreprise-c0 {
+  &.outer-style {
+    height: 50px;
+    min-height: 50px;
+    align-self: stretch;
+    z-index: 1000;
+  }
+  &.inner-style {
+    height: 100%;
+  }
+  &.property-style {
+    cursor: pointer;
+  }
+  &.template-style {
+    max-height: 50px;
+  }
+}
+// Haut de Page > Partie A > Onglet
+.onglet-c0 {
+  &.outer-style {
+    padding: 0 0 0 30px;
+    z-index: 999;
+  }
+  &.property-style {
+    overflow: hidden;
+    padding: 5px;
+    cursor: pointer;
+  }
+}
+// Haut de Page > Partie A > Onglet
+.text-1-c0 {
+  &.outer-style {
+    padding: 0 0 0 30px;
+    z-index: 999;
+  }
+  &.property-style {
+    overflow: hidden;
+    padding: 5px;
+    cursor: pointer;
+  }
+}
+// Haut de Page > Partie A > Onglet
+.text-2-c0 {
+  &.outer-style {
+    padding: 0 0 0 30px;
+    z-index: 999;
+  }
+  &.property-style {
+    overflow: hidden;
+    padding: 5px;
+    cursor: pointer;
+  }
+}
+// Haut de Page > Partie B
+.partie-b-c0 {
+  &.outer-style {
+    z-index: 1000;
+  }
+  &.scroller-style {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: inherit;
+    justify-content: end;
+  }
+  @include media-breakpoint-down(xs) {
+    &.outer-style {
+      width: 100%;
+      min-width: 0;
+      overflow: inherit;
+    }
+    &.template-style {
+      max-width: none;
+    }
+  }
+}
+// Haut de Page > Partie B > Menu Burger
+.menu-burger-c0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    z-index: 998;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+  }
+  @include media-breakpoint-down(xs) {
+    &.outer-style {
+      width: auto;
+      min-width: inherit;
+      overflow: inherit;
+    }
+    &.property-style {
+      cursor: pointer;
+    }
+    &.template-style {
+      max-width: none;
+    }
+    &.scroller-style {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-content: inherit;
+    }
+  }
+}
+// Haut de Page > Partie B > Menu Burger > Icône
+.icone-c0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    z-index: 999;
+  }
+  &.property-style {
+    text-align: center;
+  }
+  @include media-breakpoint-down(xs) {
+    &.outer-style {
+      transition-property: transform;
+      transition-duration: 0.3s;
+      transition-timing-function: ease;
+      width: auto;
+      min-width: inherit;
+      overflow: inherit;
+      &.state-selected:not(#\ ):not(#\ ) {
+        transform: rotate(180deg);
+      }
+    }
+    &.property-style {
+      font-size: 18px;
+      padding: 1px 0 0 0;
+    }
+    &.template-style {
+      max-width: none;
+    }
+  }
+}
+@include media-breakpoint-down(xs) {
+  .menu-burger-c0 {
+    &.state-selected:not(#\ ):not(#\ ) {
+      .icone-c0 {
+        &.outer-style {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+}
+// Haut de Page > Partie B > Menu Burger > Texte
+.texte-c0 {
+  &.outer-style {
+    z-index: 997;
+  }
+  &.property-style {
+    overflow: hidden;
+    padding: 15px;
+  }
+  @include media-breakpoint-down(xs) {
+    &.property-style {
+      font-size: 1.5em;
+      font-style: normal;
+      font-weight: bold;
+      text-decoration: inherit;
+      padding: 10px;
+    }
+  }
+}

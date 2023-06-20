@@ -1,0 +1,108 @@
+// Haut de Page
+.haut-de-page-p4 {
+  &.outer-style {
+    width: 250px;
+    min-width: 250px;
+    padding: 0 10px 10px 10px;
+    z-index: 995;
+  }
+  &.property-style {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+    padding: 10px;
+  }
+  &.template-style {
+    max-width: 250px;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+}
+// Haut de Page > CTA
+.cta-p4 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 3px;
+    z-index: 1000;
+  }
+  &.property-style {
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 3px 3px -2px rgba(0, 0, 0, 0.12);
+    padding: 5px 20px 5px 20px;
+    cursor: pointer;
+  }
+}
+// Haut de Page > CTA
+.button-1-p4 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 3px;
+    z-index: 999;
+  }
+  &.property-style {
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 3px 3px -2px rgba(0, 0, 0, 0.12);
+    padding: 5px 20px 5px 20px;
+    cursor: pointer;
+  }
+}
+// Haut de Page > CTA
+.button-2-p4 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 3px;
+    z-index: 998;
+  }
+  &.property-style {
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 3px 3px -2px rgba(0, 0, 0, 0.12);
+    padding: 5px 20px 5px 20px;
+    cursor: pointer;
+  }
+}
+// Haut de Page > CTA
+.button-3-p4 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 3px;
+    z-index: 997;
+  }
+  &.property-style {
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 3px 3px -2px rgba(0, 0, 0, 0.12);
+    padding: 5px 20px 5px 20px;
+    cursor: pointer;
+  }
+}
+// Haut de Page > CTA
+.button-4-p4 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 3px;
+    z-index: 996;
+  }
+  &.property-style {
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 3px 3px -2px rgba(0, 0, 0, 0.12);
+    padding: 5px 20px 5px 20px;
+    cursor: pointer;
+  }
+}

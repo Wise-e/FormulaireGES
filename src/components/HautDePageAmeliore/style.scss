@@ -1,0 +1,30 @@
+// Haut de page amélioré
+.haut-de-page-ameliore-c1 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+  }
+}
+// Haut de page amélioré > h1
+.formulaire-ges-c1 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    z-index: 1000;
+  }
+  &.property-style {
+    overflow: hidden;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+// Haut de page amélioré > Haut de Page
+.haut-de-page-c1:not(#\ ) {
+  &.outer-style {
+    z-index: 999;
+  }
+}

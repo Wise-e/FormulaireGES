@@ -1,0 +1,19 @@
+// Header
+.header-p3 {
+  &.outer-style {
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    min-height: 0;
+    min-width: 0;
+    z-index: 996;
+  }
+  &.inner-style {
+    height: 100%;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+}
