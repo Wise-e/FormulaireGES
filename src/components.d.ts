@@ -65,7 +65,6 @@ declare module '@vue/runtime-core' {
     KaYesNoInput: typeof import('./components/Inputs/KaYesNoInput.vue')['default']
     KaYoutube: typeof import('./components/Elements/KaYoutube.vue')['default']
     KaYoutubeInput: typeof import('./components/Inputs/KaYoutubeInput.vue')['default']
-    ReloadPrompt: typeof import('./components/ReloadPrompt.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }
