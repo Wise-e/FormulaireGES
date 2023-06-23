@@ -26,7 +26,7 @@ function formulaireGesFactory (storeId?: Nullable<StoreIdentifier>) {
         $title: $translate('formulaire-ges.title', 'Formulaire GES'),
         $description: $translate('formulaire-ges.description', ''),
         $publishedTime: new Date('2023-03-15T08:06:34.738Z'),
-        $modifiedTime: new Date('2023-06-23T08:45:20.355Z'),
+        $modifiedTime: new Date('2023-06-23T10:27:57.571Z'),
         // Constants,
         $constants: {},
         // Data,
