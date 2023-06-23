@@ -230,11 +230,11 @@ function testsMiseEnFormeFactory (storeId?: Nullable<StoreIdentifier>) {
               changerApprovisionnementQ: 'Oui, mais je ne sais pas encore quand',
               certitudeduChoixQ: 'Sûr et certain',
               plusProcheQ: 'Pour des questions de coût',
-              nombreEntrepriseCommande: 0,
               transportMagasin: 'Je ne sais pas',
               provenanceMatiere: 'Même ville',
               distanceMagasin: 'Même ville',
               provenanceMagasin: 'Producteur',
+              nombreEntrepriseCommande: 0,
               poidsMatiere: 0
             } as Partial<Kapix.Entity.IMatiereUser>
           }

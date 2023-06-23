@@ -12,8 +12,6 @@
       }
     }">
     <HautDePageAmeliore instance-class="haut-de-page-ameliore-p0" />
-    <!-- Container -->
-    <KaContainer code="container" />
     <!-- Formulaire -->
     <KaContainer
       code="formulaire"

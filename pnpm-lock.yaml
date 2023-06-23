@@ -24,8 +24,8 @@ dependencies:
     specifier: 1.1.2
     version: 1.1.2
   kapix-components-vue3:
-    specifier: 2.1.167
-    version: 2.1.167(typescript@4.8.4)
+    specifier: 2.1.178
+    version: 2.1.178(typescript@4.8.4)
   kapix-github-ci:
     specifier: 0.0.237
     version: 0.0.237
@@ -5608,8 +5608,8 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001505
-      electron-to-chromium: 1.4.434
+      caniuse-lite: 1.0.30001507
+      electron-to-chromium: 1.4.439
       node-releases: 2.0.12
       update-browserslist-db: 1.0.11(browserslist@4.21.9)
     dev: true
@@ -5830,8 +5830,8 @@ packages:
     resolution: {integrity: sha512-F1ZInsg53cegyjroxLNW9DmrEQ1SuGRTO1QlpA0o2/6OpQ0gFeDRoq1yFmnr8Sakn9qwwt9DmbxHB6w167OSuQ==}
     dev: true
 
-  /caniuse-lite@1.0.30001505:
-    resolution: {integrity: sha512-jaAOR5zVtxHfL0NjZyflVTtXm3D3J9P15zSJ7HmQF8dSKGA6tqzQq+0ZI3xkjyQj46I4/M0K2GbMpcAFOcbr3A==}
+  /caniuse-lite@1.0.30001507:
+    resolution: {integrity: sha512-SFpUDoSLCaE5XYL2jfqe9ova/pbQHEmbheDf5r4diNwbAgR3qxM9NQtfsiSscjqoya5K7kFcHPUQ+VsUkIJR4A==}
     dev: true
 
   /caseless@0.12.0:
@@ -7181,8 +7181,8 @@ packages:
     resolution: {integrity: sha512-czMavlW52VIPgutbVL9JnZIZuFijzsG1ww/1z2Otu1r1q+9Qe2bTsH3My3sZarlvwyqHM6+mnZfEnt2Vr4dsIg==}
     dev: true
 
-  /electron-to-chromium@1.4.434:
-    resolution: {integrity: sha512-5Gvm09UZTQRaWrimRtWRO5rvaX6Kpk5WHAPKDa7A4Gj6NIPuJ8w8WNpnxCXdd+CJJt6RBU6tUw0KyULoW6XuHw==}
+  /electron-to-chromium@1.4.439:
+    resolution: {integrity: sha512-BHpErPSNhb9FB25+OwQP6mCAf3ZXfGbmuvc4LzBNVJwpCcXQJm++LerimocYRG9FRxUVRKZqaB7d0+pImSTPSg==}
     dev: true
 
   /elegant-spinner@1.0.1:
@@ -10415,8 +10415,8 @@ packages:
     resolution: {integrity: sha512-UfpWE/VZn0iP50d8cz9NrZLM9lSWhcJ+0Gt/nm4by88UL+J1SiKN8/5dkjMmbEzwL2CAe+67GsegCbIKtbp75A==}
     dev: true
 
-  /kapix-components-vue3@2.1.167(typescript@4.8.4):
-    resolution: {integrity: sha512-HlLi6QnYf7UhHJ0DK6hP6ZEMi57Pz8vUI92omvSYw1onPnUvr8iT30kD0HIxY55fMTqC1tKYk6pSZngU3D8fAQ==}
+  /kapix-components-vue3@2.1.178(typescript@4.8.4):
+    resolution: {integrity: sha512-4YFm9HvktxO8aVqzkSVAfZLWDRl6593Adrjl1fCVvs9zEo19vRNt219DDgxE7z9wqy9tW1l5RWPBUhlzIs2/Hg==}
     engines: {node: '>=16.0.0'}
     dependencies:
       '@brackets/vue-toastification': 2.0.2(vue@3.2.45)

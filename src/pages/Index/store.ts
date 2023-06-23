@@ -26,7 +26,7 @@ function formulaireGesFactory (storeId?: Nullable<StoreIdentifier>) {
         $title: $translate('formulaire-ges.title', 'Formulaire GES'),
         $description: $translate('formulaire-ges.description', ''),
         $publishedTime: new Date('2023-03-15T08:06:34.738Z'),
-        $modifiedTime: new Date('2023-06-20T12:09:20.760Z'),
+        $modifiedTime: new Date('2023-06-23T08:45:20.355Z'),
         // Constants,
         $constants: {},
         // Data,
@@ -50,11 +50,11 @@ function formulaireGesFactory (storeId?: Nullable<StoreIdentifier>) {
               changerApprovisionnementQ: 'Oui, mais je ne sais pas encore quand',
               certitudeduChoixQ: 'Sûr et certain',
               plusProcheQ: 'Pour des questions de coût',
-              nombreEntrepriseCommande: 0,
               transportMagasin: 'Je ne sais pas',
               provenanceMatiere: 'Même ville',
               distanceMagasin: 'Même ville',
               provenanceMagasin: 'Producteur',
+              nombreEntrepriseCommande: 0,
               poidsMatiere: 0
             } as Partial<Kapix.Entity.IMatiereUser>
           }

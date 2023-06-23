@@ -23,17 +23,6 @@
     z-index: 1000;
   }
 }
-// Formulaire GES > Container
-.container-p0 {
-  &.outer-style {
-    width: 100%;
-    min-width: 0;
-    z-index: 999;
-  }
-  &.scroller-style {
-    flex-wrap: wrap;
-  }
-}
 // Formulaire GES > Formulaire
 .formulaire-p0 {
   &.outer-style {

@@ -17,3 +17,9 @@
     overflow-y: auto;
   }
 }
+// Header > Haut de page amélioré
+.haut-de-page-ameliore-p3:not(#\ ) {
+  &.outer-style {
+    z-index: 1000;
+  }
+}
