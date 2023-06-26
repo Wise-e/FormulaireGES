@@ -55,49 +55,52 @@ declare namespace Kapix {
   declare namespace Entity {
     declare interface IMatiereUser {
       Id: number
-      changerApprovisionnementQ: 'Oui, mais je ne sais pas encore quand' | 'Non, j'en suis satisfait' | 'Non, je ne peux pas me le permettre pour le moment' | 'Oui, je suis en train de le faire'
-      certitudeduChoixQ: 'Sûr et certain' | 'à ma connaissance' | 'Je ne sais pas'
-      plusProcheQ: 'Pour des questions de coût' | 'Par habitude' | 'Partenariat longue durée' | 'N'existe pas plus près'
-      transportMagasin: 'Je ne sais pas' | 'Maritime/Fluvial' | 'Aérien' | 'Train' | 'Routier'
-      provenanceMatiere: 'Même ville' | 'Même département' | 'Même région' | 'Autre région' | 'Pays frontalier' | 'Pays d'Europe' | 'Autre continent' | 'Made in France' | 'Made in Europe' | 'Hors UE' | 'Je ne sais pas'
-      distanceMagasin: 'Même ville' | 'Même département' | 'Même région' | 'Autre Région' | 'Pays frontalier' | 'Autre pays d'Europe' | 'Autre continent'
-      provenanceMagasin: 'Producteur' | 'Magasin' | 'Grossiste' | 'Autre'
-      CreatedBy: string
-      ModifiedBy: Nullable<string>
-      nombreEntrepriseCommande: number
-      consoTransport: Nullable<number>
       poidsMatiere: number
+      provenanceMagasin: 'Producteur' | 'Magasin' | 'Grossiste' | 'Autre'
       caracteristiqueNeuve: Nullable<number>
       caracteristiqueOccasion: Nullable<number>
-      caracteristiqueAutoproduite: Nullable<number>
       caracteristiqueRecyclage: Nullable<number>
       caracteristiqueRecup: Nullable<number>
+      caracteristiqueAutoproduite: Nullable<number>
+      distanceMagasin: 'Même ville' | 'Même département' | 'Même région' | 'Autre Région' | 'Pays frontalier' | 'Autre pays d'Europe' | 'Autre continent'
+      consoTransport: Nullable<number>
+      provenanceMatiere: 'Même ville' | 'Même département' | 'Même région' | 'Autre région' | 'Pays frontalier' | 'Pays d'Europe' | 'Autre continent' | 'Made in France' | 'Made in Europe' | 'Hors UE' | 'Je ne sais pas'
+      transportMagasin: 'Je ne sais pas' | 'Maritime/Fluvial' | 'Aérien' | 'Train' | 'Routier'
+      nombreEntrepriseCommande: number
+      plusProcheQ: 'Pour des questions de coût' | 'Par habitude' | 'Partenariat longue durée' | 'N'existe pas plus près'
+      certitudeduChoixQ: 'Sûr et certain' | 'à ma connaissance' | 'Je ne sais pas'
+      changerApprovisionnementQ: 'Oui, mais je ne sais pas encore quand' | 'Non, j'en suis satisfait' | 'Non, je ne peux pas me le permettre pour le moment' | 'Oui, je suis en train de le faire'
+      Saisonnalite: Nullable<boolean>
+      CreatedBy: string
+      ModifiedBy: Nullable<string>
       CreatedAt: Date
       ModifiedAt: Nullable<Date>
-      Saisonnalite: Nullable<boolean>
       MatiereNomMatiere: string
       MoyenTransportId: number
       CompteIdCompte: number
       OptimisticConcurrencyVersion: number
       Matiere: PartialEntity<Kapix.Entity.IMatiere>
+      matiereNomMatiere: 'Sulfate de sodium ou d'ammonium' | 'Acide benzoique, sodium benzoate, tocopherol, benzyl benzoate' | 'Acide chlorydrique, phosphorique, sorbique, potassium sorbate' | 'Acide sulfurique' | 'Acier/Fer' | 'Alcool' | 'Aluminium' | 'Ammoniaque' | 'Argent' | 'Carbonate de calcium' | 'Acide citrique, tartrique, nitrique' | 'Acide sulfurique' | 'Bicarbonate de soude/Sodium' | 'Chlorure de sodium, Potassium' | 'Chlore' | 'Cuivre' | 'Epoxy' | 'Fibre de carbone/Graphite' | 'Nickel' | 'Or' | 'Oxyde de zinc' | 'PET' | 'Peinture en bombre' | 'Peinture en bombe' | 'Peinture en pot' | 'Platine (et famille)' | 'Plomb' | 'Résine' | 'Savons, détergents et tensioactifs' | 'Soude' | 'Soufre' | 'Titane' | 'Vernis en bombe' | 'Vernis en pot' | 'Verre'
       MoyenTransport: PartialEntity<Kapix.Entity.IMoyenTransport>
+      moyenTransportId: number
       Compte: PartialEntity<Kapix.Entity.ICompte>
+      compteIdCompte: number
     }
     declare interface ISalarie {
       id: number
+      OptimisticConcurrencyVersion: number
+      Transports: PartialEntities<Kapix.Entity.ITransport>
       CreatedBy: string
       ModifiedBy: Nullable<string>
       CreatedAt: Date
       ModifiedAt: Nullable<Date>
-      OptimisticConcurrencyVersion: number
-      Transports: PartialEntities<Kapix.Entity.ITransport>
     }
     declare interface IEnergieRenouvelables {
       Id: number
       nomEnergieRenouvelable: string
+      valeurEnergieRenouvelable: Nullable<number>
       CreatedBy: string
       ModifiedBy: Nullable<string>
-      valeurEnergieRenouvelable: Nullable<number>
       CreatedAt: Date
       ModifiedAt: Nullable<Date>
       OptimisticConcurrencyVersion: number
@@ -105,52 +108,55 @@ declare namespace Kapix {
     }
     declare interface IAgricole {
       Id: number
-      alternativenaturelQ: Nullable<'Non jamais' | 'Oui mais je n'ai pas pu trouver mieux pour le moment' | 'Oui je pense le faire prochainement'> | Nullable<Array<any>>
-      CreatedBy: string
-      ModifiedBy: Nullable<string>
-      nombreDeMachines: Nullable<number>
-      surfaceAgricole: Nullable<number>
       nombreDeTete: Nullable<number>
-      engraischimique: Nullable<number>
+      surfaceAgricole: Nullable<number>
+      nombreDeMachines: Nullable<number>
       compost: Nullable<number>
-      CreatedAt: Date
-      ModifiedAt: Nullable<Date>
+      engraischimique: Nullable<number>
+      alternativenaturelQ: Nullable<'Non jamais' | 'Oui mais je n'ai pas pu trouver mieux pour le moment' | 'Oui je pense le faire prochainement'> | Nullable<Array<any>>
       CompteIdCompte: number
       OptimisticConcurrencyVersion: number
       Compte: PartialEntity<Kapix.Entity.ICompte>
+      compteIdCompte: number
+      CreatedBy: string
+      ModifiedBy: Nullable<string>
+      CreatedAt: Date
+      ModifiedAt: Nullable<Date>
     }
     declare interface IChauffage {
       Id: number
       nomChauffage: string
-      CreatedBy: string
-      ModifiedBy: Nullable<string>
       valeurChauffage: Nullable<number>
-      CreatedAt: Date
-      ModifiedAt: Nullable<Date>
       OptimisticConcurrencyVersion: number
       ChauffageUsers: PartialEntities<Kapix.Entity.IChauffageUser>
+      CreatedBy: string
+      ModifiedBy: Nullable<string>
+      CreatedAt: Date
+      ModifiedAt: Nullable<Date>
     }
     declare interface IChauffageUser {
       Id: number
-      CreatedBy: string
-      ModifiedBy: Nullable<string>
-      resultatChauffer: Nullable<number>
       valeurChauffer: number
-      CreatedAt: Date
-      ModifiedAt: Nullable<Date>
+      resultatChauffer: Nullable<number>
       ChauffageId: number
       CompteIdCompte: number
       OptimisticConcurrencyVersion: number
       Chauffage: PartialEntity<Kapix.Entity.IChauffage>
+      chauffageId: number
       Compte: PartialEntity<Kapix.Entity.ICompte>
+      compteIdCompte: number
+      CreatedBy: string
+      ModifiedBy: Nullable<string>
+      CreatedAt: Date
+      ModifiedAt: Nullable<Date>
     }
     declare interface IEmballage {
       Id: number
       nomEmballage: string
+      valeurEmballage: Nullable<number>
+      valeurRecycleEmballage: Nullable<number>
       CreatedBy: string
       ModifiedBy: Nullable<string>
-      valeurRecycleEmballage: Nullable<number>
-      valeurEmballage: Nullable<number>
       CreatedAt: Date
       ModifiedAt: Nullable<Date>
       OptimisticConcurrencyVersion: number
@@ -158,26 +164,28 @@ declare namespace Kapix {
     }
     declare interface IEmballageUser {
       Id: number
+      valeurEmballer: number
+      resultatEmballer: Nullable<number>
+      issueRecycleEmballage: Nullable<boolean>
+      recyclableEmballage: Nullable<boolean>
       CreatedBy: string
       ModifiedBy: Nullable<string>
-      resultatEmballer: Nullable<number>
-      valeurEmballer: number
       CreatedAt: Date
       ModifiedAt: Nullable<Date>
-      recyclableEmballage: Nullable<boolean>
-      issueRecycleEmballage: Nullable<boolean>
       EmballageId: number
       CompteIdCompte: number
       OptimisticConcurrencyVersion: number
       Emballage: PartialEntity<Kapix.Entity.IEmballage>
+      emballageId: number
       Compte: PartialEntity<Kapix.Entity.ICompte>
+      compteIdCompte: number
     }
     declare interface IFournitures {
       Id: number
       nomFourniture: string
+      valeurFourniture: Nullable<number>
       CreatedBy: string
       ModifiedBy: Nullable<string>
-      valeurFourniture: Nullable<number>
       CreatedAt: Date
       ModifiedAt: Nullable<Date>
       OptimisticConcurrencyVersion: number
@@ -185,127 +193,136 @@ declare namespace Kapix {
     }
     declare interface IFournitureUser {
       Id: number
-      caractFourniture: 'Loué' | 'Neuf' | 'Reconditionnés' | 'Seconde main'
-      jeterFourniture: 'Don' | 'Revente' | 'Décheterie' | 'Recyclage'
-      raisonJeterFourniture: 'Manque de performance' | 'Amortissement comptable' | 'Usure' | 'Evolution de la technologie'
-      tempsGarder: 'Moins d'un an' | 'Plus de 10 ans' | 'Entre 1 et 5 ans' | 'Entre 5 et 10 ans'
+      nombreFourniture: number
       tempsPossession: 'Moins d'un an' | 'Entre 1 et 5 ans' | 'Entre 5 et 10 ans' | 'Plus de 10 ans'
+      tempsGarder: 'Moins d'un an' | 'Plus de 10 ans' | 'Entre 1 et 5 ans' | 'Entre 5 et 10 ans'
+      caractFourniture: 'Loué' | 'Neuf' | 'Reconditionnés' | 'Seconde main'
+      raisonJeterFourniture: 'Manque de performance' | 'Amortissement comptable' | 'Usure' | 'Evolution de la technologie'
+      jeterFourniture: 'Don' | 'Revente' | 'Décheterie' | 'Recyclage'
+      nombrePartageEntreprise: number
+      resultat: Nullable<number>
       CreatedBy: string
       ModifiedBy: Nullable<string>
-      resultat: Nullable<number>
-      nombrePartageEntreprise: number
-      nombreFourniture: number
       CreatedAt: Date
       ModifiedAt: Nullable<Date>
       FournituresId: number
       CompteIdCompte: number
       OptimisticConcurrencyVersion: number
       Fournitures: PartialEntity<Kapix.Entity.IFournitures>
+      fournituresId: number
       Compte: PartialEntity<Kapix.Entity.ICompte>
+      compteIdCompte: number
     }
     declare interface IEnergieRenouvelableUser {
       Id: number
-      CreatedBy: string
-      ModifiedBy: Nullable<string>
       valeurEnergieRenouvelableUser: number
-      CreatedAt: Date
-      ModifiedAt: Nullable<Date>
       EnergieRenouvelablesId: number
       CompteIdCompte: number
       OptimisticConcurrencyVersion: number
       EnergieRenouvelables: PartialEntity<Kapix.Entity.IEnergieRenouvelables>
+      energieRenouvelablesId: number
       Compte: PartialEntity<Kapix.Entity.ICompte>
+      compteIdCompte: number
+      CreatedBy: string
+      ModifiedBy: Nullable<string>
+      CreatedAt: Date
+      ModifiedAt: Nullable<Date>
     }
     declare interface IEnergieUser {
       Id: number
-      CreatedBy: string
-      ModifiedBy: Nullable<string>
       valeurEnergieUser: Nullable<number>
-      CreatedAt: Date
-      ModifiedAt: Nullable<Date>
       EnergieId: number
       CompteIdCompte: number
       OptimisticConcurrencyVersion: number
       Energie: PartialEntity<Kapix.Entity.IEnergie>
+      energieId: number
       Compte: PartialEntity<Kapix.Entity.ICompte>
+      compteIdCompte: number
+      CreatedBy: string
+      ModifiedBy: Nullable<string>
+      CreatedAt: Date
+      ModifiedAt: Nullable<Date>
     }
     declare interface IGenreDechet {
       Id: number
       nomDechet: string
-      CreatedBy: string
-      ModifiedBy: Nullable<string>
       valeurDechet: number
-      CreatedAt: Date
-      ModifiedAt: Nullable<Date>
       OptimisticConcurrencyVersion: number
       GenreDechetUsers: PartialEntities<Kapix.Entity.IGenreDechetUser>
+      CreatedBy: string
+      ModifiedBy: Nullable<string>
+      CreatedAt: Date
+      ModifiedAt: Nullable<Date>
     }
     declare interface IPoubelle {
       Id: number
-      Couleur: 'Noire' | 'Jaune' | 'Verte' | 'Bleue'
-      taillePoubelle: 'Moins de 30L' | 'Entre 30L et 100L' | 'Entre 100L et 150L' | '240L' | '660L' | '770L' | '1100L' | '3 à 6m3' | '7 à 15m3' | 'Plus de 20m3'
+      clecomposite: Nullable<string>
       typePoubelle: 'Sac' | 'Poubelle' | 'Benne'
+      taillePoubelle: 'Moins de 30L' | 'Entre 30L et 100L' | 'Entre 100L et 150L' | '240L' | '660L' | '770L' | '1100L' | '3 à 6m3' | '7 à 15m3' | 'Plus de 20m3'
+      Couleur: 'Noire' | 'Jaune' | 'Verte' | 'Bleue'
+      valeurPoubelle: number
       CreatedBy: string
       ModifiedBy: Nullable<string>
-      valeurPoubelle: number
       CreatedAt: Date
       ModifiedAt: Nullable<Date>
       OptimisticConcurrencyVersion: number
       PoubelleUsers: PartialEntities<Kapix.Entity.IPoubelleUser>
-      clecomposite: Nullable<string>
     }
     declare interface ITransportQuestion {
       Id: number
       regrouperDeplacement: 'Oui j'essaye de le faire au maximum' | 'J'ai déjà pensé à le faire mais je n'en ai pas eu l'occasion' | 'Non je ne peux pas me le permettre'
+      surplaceObligatoire: boolean
+      tachesADistance: boolean
+      CompteIdCompte: number
+      OptimisticConcurrencyVersion: number
+      Compte: PartialEntity<Kapix.Entity.ICompte>
+      compteIdCompte: number
       CreatedBy: string
       ModifiedBy: Nullable<string>
       CreatedAt: Date
       ModifiedAt: Nullable<Date>
-      tachesADistance: boolean
-      surplaceObligatoire: boolean
-      CompteIdCompte: number
-      OptimisticConcurrencyVersion: number
-      Compte: PartialEntity<Kapix.Entity.ICompte>
     }
     declare interface IEquipementUser {
       Id: number
-      jeterEquipement: Nullable<'Recyclage' | 'Décheterie' | 'Revente' | 'Don'>
-      raisonJeterEquipement: Nullable<'Manque de performance' | 'Amortissement Comptable' | 'Usure' | 'Evolution de la technologie'>
-      garderEquipement: Nullable<'Moins d'un an' | 'Entre 1 et 5 ans' | 'Entre 5 et 10 ans' | 'Plus de 10 ans'>
-      caractEquipement: Nullable<'Loué' | 'Neuf' | 'Reconditionné' | 'Seconde main'>
-      dureeEquipement: Nullable<'Moins d'un an' | 'Entre 1 et 5 ans' | 'Entre 5 et 10 ans' | 'Plus de 10 ans'>
-      CreatedBy: string
-      ModifiedBy: Nullable<string>
-      resultat: Nullable<number>
-      nombreEntreprisePartage: Nullable<number>
       nombreEquipement: number
+      dureeEquipement: Nullable<'Moins d'un an' | 'Entre 1 et 5 ans' | 'Entre 5 et 10 ans' | 'Plus de 10 ans'>
+      caractEquipement: Nullable<'Loué' | 'Neuf' | 'Reconditionné' | 'Seconde main'>
+      garderEquipement: Nullable<'Moins d'un an' | 'Entre 1 et 5 ans' | 'Entre 5 et 10 ans' | 'Plus de 10 ans'>
+      raisonJeterEquipement: Nullable<'Manque de performance' | 'Amortissement Comptable' | 'Usure' | 'Evolution de la technologie'>
+      jeterEquipement: Nullable<'Recyclage' | 'Décheterie' | 'Revente' | 'Don'>
+      nombreEntreprisePartage: Nullable<number>
+      CreatedBy: string
+      resultat: Nullable<number>
+      ModifiedBy: Nullable<string>
       CreatedAt: Date
       ModifiedAt: Nullable<Date>
       EquipementId: number
       CompteIdCompte: number
       OptimisticConcurrencyVersion: number
       Equipement: PartialEntity<Kapix.Entity.IEquipement>
+      equipementId: number
       Compte: PartialEntity<Kapix.Entity.ICompte>
+      compteIdCompte: number
     }
     declare interface IEquipement {
       Id: number
       nomEquipement: string
-      CreatedBy: string
-      ModifiedBy: Nullable<string>
       valeurEquipement: Nullable<number>
-      CreatedAt: Date
-      ModifiedAt: Nullable<Date>
       OptimisticConcurrencyVersion: number
       EquipementUsers: PartialEntities<Kapix.Entity.IEquipementUser>
+      CreatedBy: string
+      ModifiedBy: Nullable<string>
+      CreatedAt: Date
+      ModifiedAt: Nullable<Date>
     }
     declare interface IEnergie {
       Id: number
-      uniteEnergie: Nullable<'Litres' | 'KG' | 'Stère'>
       TexteCourt: string
+      uniteEnergie: Nullable<'Litres' | 'KG' | 'Stère'>
+      valeurEnergieLitreouM3: Nullable<number>
+      valeurKg: Nullable<number>
       CreatedBy: string
       ModifiedBy: Nullable<string>
-      valeurKg: Nullable<number>
-      valeurEnergieLitreouM3: Nullable<number>
       CreatedAt: Date
       ModifiedAt: Nullable<Date>
       OptimisticConcurrencyVersion: number
@@ -313,148 +330,157 @@ declare namespace Kapix {
     }
     declare interface IMatiere {
       nomMatiere: 'Sulfate de sodium ou d'ammonium' | 'Acide benzoique, sodium benzoate, tocopherol, benzyl benzoate' | 'Acide chlorydrique, phosphorique, sorbique, potassium sorbate' | 'Acide sulfurique' | 'Acier/Fer' | 'Alcool' | 'Aluminium' | 'Ammoniaque' | 'Argent' | 'Carbonate de calcium' | 'Acide citrique, tartrique, nitrique' | 'Acide sulfurique' | 'Bicarbonate de soude/Sodium' | 'Chlorure de sodium, Potassium' | 'Chlore' | 'Cuivre' | 'Epoxy' | 'Fibre de carbone/Graphite' | 'Nickel' | 'Or' | 'Oxyde de zinc' | 'PET' | 'Peinture en bombre' | 'Peinture en bombe' | 'Peinture en pot' | 'Platine (et famille)' | 'Plomb' | 'Résine' | 'Savons, détergents et tensioactifs' | 'Soude' | 'Soufre' | 'Titane' | 'Vernis en bombe' | 'Vernis en pot' | 'Verre'
-      mesureMatiere: 'Litres' | 'KG' | 'Nombre'
       categorieMatiere: 'Produits chimiques et alcool' | 'Peinture/ Vernis/ Résines/Teinture/En' | 'Plastiques' | 'Métaux' | 'Verre' | 'Papeterie' | 'Autres' | 'Minéraux' | 'Produits d'hygiène et nettoyage' | 'Textile' | 'Bois' | 'Alimentaire'
+      mesureMatiere: 'Litres' | 'KG' | 'Nombre'
+      valeurMatiere: Nullable<number>
+      valeurRecyclage: Nullable<number>
       CreatedBy: string
       ModifiedBy: Nullable<string>
-      valeurRecyclage: Nullable<number>
-      valeurMatiere: Nullable<number>
       CreatedAt: Date
-      ModifiedAt: Nullable<Date>
       OptimisticConcurrencyVersion: number
+      ModifiedAt: Nullable<Date>
       MatiereUsers: PartialEntities<Kapix.Entity.IMatiereUser>
     }
     declare interface IBatiment {
       Id: number
-      classeEnergitique: Nullable<'A' | 'C' | 'D' | 'E' | 'G' | 'Je ne sais pas'>
-      lieuBatiment: Nullable<'Bâtiment industriel' | 'Chez vous' | 'Atelier/Boutique'>
       CreatedBy: string
-      ModifiedBy: Nullable<string>
-      consoElectrique: Nullable<number>
-      nbEntreprisesPartageLieu: Nullable<number>
+      lieuBatiment: Nullable<'Bâtiment industriel' | 'Chez vous' | 'Atelier/Boutique'>
       surfaceBatiment: Nullable<number>
+      nbEntreprisesPartageLieu: Nullable<number>
+      classeEnergitique: Nullable<'A' | 'C' | 'D' | 'E' | 'G' | 'Je ne sais pas'>
+      consoElectrique: Nullable<number>
+      ModifiedBy: Nullable<string>
       CreatedAt: Date
       ModifiedAt: Nullable<Date>
       CompteIdCompte: number
       OptimisticConcurrencyVersion: number
       Compte: PartialEntity<Kapix.Entity.ICompte>
+      compteIdCompte: number
     }
     declare interface IVente {
       Id: number
+      nombreVenteSemaine: number
+      garantieMois: number
+      produitRecyclable: boolean
+      recupProduit: boolean
+      restaurerProduit: boolean
+      Locaux: Nullable<number>
+      Touristes: Nullable<number>
+      n1Km: Nullable<number>
+      n10Km: Nullable<number>
+      n10A20Km: Nullable<number>
+      n20Km: Nullable<number>
+      routier: Nullable<number>
+      maritime: Nullable<number>
+      marketplaces: Nullable<number>
+      aerien: Nullable<number>
+      train: Nullable<number>
+      emplacementBoutique: 'En centre ville' | 'Zone périurbaine' | 'Zone rurale'
+      choixEmplacement: 'Proximité gare' | 'Proximité autoroute  et grand axes routiers' | 'Proximité de mon domicile' | 'Proximité fournisseur' | 'Lieu de passage fréquent' | 'Proximité aéroport'
       accessibiliteBoutique: Nullable<'Près du bus/tram' | 'Parking voiture' | 'Parking vélo' | 'Près d'une gare'> | Nullable<Array<any>>
       raisonDeChangement: Nullable<string>
-      choixEmplacement: 'Proximité gare' | 'Proximité autoroute  et grand axes routiers' | 'Proximité de mon domicile' | 'Proximité fournisseur' | 'Lieu de passage fréquent' | 'Proximité aéroport'
-      emplacementBoutique: 'En centre ville' | 'Zone périurbaine' | 'Zone rurale'
       CreatedBy: string
       ModifiedBy: Nullable<string>
-      garantieMois: number
-      nombreVenteSemaine: number
-      train: Nullable<number>
-      aerien: Nullable<number>
-      marketplaces: Nullable<number>
-      maritime: Nullable<number>
-      routier: Nullable<number>
-      n20Km: Nullable<number>
-      n10A20Km: Nullable<number>
-      n10Km: Nullable<number>
-      n1Km: Nullable<number>
-      Touristes: Nullable<number>
-      Locaux: Nullable<number>
       CreatedAt: Date
       ModifiedAt: Nullable<Date>
-      restaurerProduit: boolean
-      recupProduit: boolean
-      produitRecyclable: boolean
       CompteIdCompte: number
       OptimisticConcurrencyVersion: number
       Compte: PartialEntity<Kapix.Entity.ICompte>
+      compteIdCompte: number
     }
     declare interface ITransport {
       Id: number
-      CreatedBy: string
-      ModifiedBy: Nullable<string>
       nombreKm: number
       consoTransport: number
-      CreatedAt: Date
-      ModifiedAt: Nullable<Date>
-      transportPro: boolean
-      deplacementPro: boolean
-      calculMoyenne: boolean
-      fonction: boolean
       covoiturage: boolean
+      fonction: boolean
+      calculMoyenne: boolean
+      deplacementPro: boolean
+      transportPro: boolean
       SalarieId: Nullable<number>
       CompteIdCompte: number
       OptimisticConcurrencyVersion: number
       Salarie: PartialEntity<Kapix.Entity.ISalarie>
+      salarieId: number
       Compte: PartialEntity<Kapix.Entity.ICompte>
+      compteIdCompte: number
       MoyenTransports: PartialEntities<Kapix.Entity.IMoyenTransport>
+      CreatedBy: string
+      ModifiedBy: Nullable<string>
+      CreatedAt: Date
+      ModifiedAt: Nullable<Date>
     }
     declare interface IDechetsQuestion {
       Id: number
-      usagePoubelleOrganique: Nullable<'Usage professionnel' | 'Usage personnel' | 'Récupération par des services professionnel' | 'Don à une municipalité'>
-      tailleRemorque: Nullable<'Bagagère de moins de 500L' | 'Bagagère de plus de 500L' | 'Professionnel entre 800L et 1000L' | 'Professionnel de plus de 1000L'>
-      CreatedBy: string
-      ModifiedBy: Nullable<string>
-      taillePoubelleOrganique: Nullable<number>
-      allerRetourMois: Nullable<number>
-      CreatedAt: Date
-      ModifiedAt: Nullable<Date>
-      plierSiege: Nullable<boolean>
       decheterie: Nullable<boolean>
+      plierSiege: Nullable<boolean>
+      tailleRemorque: Nullable<'Bagagère de moins de 500L' | 'Bagagère de plus de 500L' | 'Professionnel entre 800L et 1000L' | 'Professionnel de plus de 1000L'>
+      allerRetourMois: Nullable<number>
+      taillePoubelleOrganique: Nullable<number>
+      usagePoubelleOrganique: Nullable<'Usage professionnel' | 'Usage personnel' | 'Récupération par des services professionnel' | 'Don à une municipalité'>
       CompteIdCompte: number
       OptimisticConcurrencyVersion: number
       Compte: PartialEntity<Kapix.Entity.ICompte>
+      compteIdCompte: number
+      CreatedBy: string
+      ModifiedBy: Nullable<string>
+      CreatedAt: Date
+      ModifiedAt: Nullable<Date>
     }
     declare interface IMoyenTransport {
       Id: number
-      carburantTransport: 'Electrique' | 'Biocarburant' | 'GPL/GNL' | 'Essence' | 'Gazole' | 'Transport en commun'
       nomTransport: string
+      carburantTransport: 'Electrique' | 'Biocarburant' | 'GPL/GNL' | 'Essence' | 'Gazole' | 'Transport en commun'
+      consoTransport: number
+      voiture: Nullable<boolean>
+      Concatenation12: Nullable<string>
       CreatedBy: string
       ModifiedBy: Nullable<string>
-      consoTransport: number
-      CreatedAt: Date
-      ModifiedAt: Nullable<Date>
-      voiture: Nullable<boolean>
       OptimisticConcurrencyVersion: number
+      CreatedAt: Date
       Transports: PartialEntities<Kapix.Entity.ITransport>
+      ModifiedAt: Nullable<Date>
       MatiereUsers: PartialEntities<Kapix.Entity.IMatiereUser>
-      Concatenation12: Nullable<string>
     }
     declare interface IGenreDechetUser {
       Id: number
+      valeurDechet: number
       CreatedBy: string
       ModifiedBy: Nullable<string>
-      valeurDechet: number
       CreatedAt: Date
       ModifiedAt: Nullable<Date>
       GenreDechetId: number
       CompteIdCompte: number
       OptimisticConcurrencyVersion: number
       GenreDechet: PartialEntity<Kapix.Entity.IGenreDechet>
+      genreDechetId: number
       Compte: PartialEntity<Kapix.Entity.ICompte>
+      compteIdCompte: number
     }
     declare interface IPoubelleUser {
       Id: number
-      CreatedBy: string
-      ModifiedBy: Nullable<string>
-      CreatedAt: Date
-      ModifiedAt: Nullable<Date>
       PoubelleId: number
       CompteIdCompte: number
       OptimisticConcurrencyVersion: number
       Poubelle: PartialEntity<Kapix.Entity.IPoubelle>
+      poubelleId: number
       Compte: PartialEntity<Kapix.Entity.ICompte>
-    }
-    declare interface ICompte {
-      idCompte: number
-      Nom: Nullable<string>
-      Prenom: Nullable<string>
-      EMail: Nullable<string>
+      compteIdCompte: number
       CreatedBy: string
       ModifiedBy: Nullable<string>
       CreatedAt: Date
       ModifiedAt: Nullable<Date>
+    }
+    declare interface ICompte {
+      idCompte: number
+      EMail: Nullable<string>
+      Prenom: Nullable<string>
+      Nom: Nullable<string>
       Admin: boolean
+      CreatedBy: string
+      ModifiedBy: Nullable<string>
+      ModifiedAt: Nullable<Date>
+      CreatedAt: Date
       OptimisticConcurrencyVersion: number
       MatiereUsers: PartialEntities<Kapix.Entity.IMatiereUser>
       Agricoles: PartialEntities<Kapix.Entity.IAgricole>
@@ -475,29 +501,30 @@ declare namespace Kapix {
     }
     declare interface IDashboard {
       Id: number
-      Couleur5: Nullable<string>
-      Couleur4: Nullable<string>
-      Couleur3: Nullable<string>
-      Couleur2: Nullable<string>
-      Couleur1: Nullable<string>
-      Couleur: Nullable<string>
-      FamilleDePolices: Nullable<string>
       Image: Nullable<string>
+      FamilleDePolices: Nullable<string>
+      Couleur: Nullable<string>
+      Couleur1: Nullable<string>
+      Couleur2: Nullable<string>
+      Couleur3: Nullable<string>
+      Couleur4: Nullable<string>
+      Couleur5: Nullable<string>
+      CompteIdCompte: number
+      OptimisticConcurrencyVersion: number
+      Compte: PartialEntity<Kapix.Entity.ICompte>
+      compteIdCompte: number
       CreatedBy: string
       ModifiedBy: Nullable<string>
       CreatedAt: Date
       ModifiedAt: Nullable<Date>
-      CompteIdCompte: number
-      OptimisticConcurrencyVersion: number
-      Compte: PartialEntity<Kapix.Entity.ICompte>
     }
     declare interface IUser {
-      type: Nullable<'Admin' | 'Artisan' | 'Client'>
       id: unknown
       email: string
       userName: string
       imageUrl: string
       emailConfirmed: boolean
+      type: Nullable<'Admin' | 'Artisan' | 'Client'>
       state: Nullable<null | 'premium' | 'blocked' | 'banned' | 'waiting'>
     }
     declare interface IApplication {

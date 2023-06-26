@@ -14,7 +14,13 @@
     <!-- Dashboard Form -->
     <KaContainer
       code="dashboard-form"
-      :data="page.$info.dashboardForm">
+      :data="page.$info.dashboardForm"
+      :options="{
+        displays: [
+          `Success`,
+          `Error`
+        ]
+      }">
       <!-- Form content -->
       <KaContainer code="form-content">
         <KaImageViewerInput

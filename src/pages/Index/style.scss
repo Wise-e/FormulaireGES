@@ -23,13 +23,66 @@
     z-index: 1000;
   }
 }
-// Formulaire GES > Formulaire
+// Formulaire GES > Container
+.container-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    align-self: center;
+    z-index: 999;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+// Formulaire GES > Container > Container
+.container-1-p0 {
+  &.outer-style {
+    width: 80%;
+    min-width: 0;
+    z-index: 1000;
+  }
+  &.scroller-style {
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    align-content: inherit;
+    justify-content: center;
+  }
+  @include media-breakpoint-down(xs) {
+    &.outer-style {
+      width: 100%;
+      overflow: inherit;
+    }
+    &.template-style {
+      max-width: none;
+    }
+  }
+}
+// Formulaire GES > Container > Container > List
+.list-p0 {
+  &.outer-style {
+    height: 100%;
+    width: 100%;
+    min-height: 0;
+    min-width: 0;
+    z-index: 1000;
+  }
+  &.inner-style {
+    height: 100%;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+    overflow: auto;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire
 .formulaire-p0 {
   &.outer-style {
     width: 100%;
     min-width: 0;
     padding: 10px;
-    z-index: 999;
+    z-index: 998;
   }
   &.property-style {
     border-radius: 8px;
@@ -44,7 +97,7 @@
     overflow: auto;
   }
 }
-// Formulaire GES > Formulaire > button
+// Formulaire GES > Container > Container > Formulaire > button
 .commencer-le-formulaire-p0 {
   &.outer-style {
     padding: 5px;

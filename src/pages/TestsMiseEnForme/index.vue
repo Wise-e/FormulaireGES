@@ -26,7 +26,13 @@
     <!-- MatiereUser Form -->
     <KaContainer
       code="matiere-user-form"
-      :data="page.$info.matiereUserForm">
+      :data="page.$info.matiereUserForm"
+      :options="{
+        displays: [
+          `Success`,
+          `Error`
+        ]
+      }">
       <!-- Form content -->
       <KaContainer code="form-content">
         <KaNavigationPropertyInput

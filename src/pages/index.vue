@@ -12,25 +12,60 @@
       }
     }">
     <HautDePageAmeliore instance-class="haut-de-page-ameliore-p0" />
-    <!-- Formulaire -->
-    <KaContainer
-      code="formulaire"
-      :data="page.$info.formulaire"
-      :options="{
-        style: {
-          backgroundColor: appData.theme.backgroundColor2,
-          color: appData.theme.fontColor2
-        }
-      }">
-      <KaButton
-        code="commencer-le-formulaire"
-        :options="{
-          ripple: true,
-          click: page.commencerLeFormulaireClick,
-          $state: { selected: page.$data.formStep === 1 }
-        }">
-        <span v-html="t('formulaireGes.formulaire.commencerLeFormulaire.value', `Commencer le formulaire`)" />
-      </KaButton>
+    <!-- Container -->
+    <KaContainer code="container">
+      <!-- Container -->
+      <KaContainer code="container-1">
+        <KaList
+          v-model="page.list.value"
+          code="list"
+          :options="{
+            placeholder: `No items`,
+            debounce: 0,
+            overflow: `auto`
+          }"
+          :data="page.$info.list">
+          <template #item="listItemProps">
+          </template>
+        </KaList>
+        <!-- Formulaire -->
+        <KaContainer
+          code="formulaire"
+          :data="page.$info.formulaire"
+          :options="{
+            style: {
+              backgroundColor: appData.theme.backgroundColor2,
+              color: appData.theme.fontColor2
+            },
+            displays: [
+              `Success`,
+              `Error`,
+              `Formulaire GES Matières`,
+              `Formulaire GES Agricole`,
+              `Formulaire GES Energie`,
+              `Formulaire GES Equipement`,
+              `Formulaire Fourniture`,
+              `Formulaire GES Batiment`,
+              `Formulaire GES Chauffage`,
+              `Formulaire GES Energie Renouvelable`,
+              `Formulaire GES Vente`,
+              `Formulaire GES Emballage`,
+              `Formulaire GES Transport`,
+              `Formulaire GES Dechets`
+            ],
+            display: `s9sSKdPVNBK1WRUzATzFcQ`
+          }">
+          <KaButton
+            code="commencer-le-formulaire"
+            :options="{
+              ripple: true,
+              click: page.commencerLeFormulaireClick,
+              $state: { selected: page.$data.formStep === 1 }
+            }">
+            <span v-html="t('formulaireGes.container.container1.formulaire.commencerLeFormulaire.value', `Commencer le formulaire`)" />
+          </KaButton>
+        </KaContainer>
+      </KaContainer>
     </KaContainer>
   </KaContainer>
 </template>

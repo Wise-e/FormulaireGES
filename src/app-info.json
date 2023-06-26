@@ -119,6 +119,18 @@
       {
         "name": "Dashboard en-US",
         "item": "/Dashboard/en-US"
+      },
+      {
+        "name": "Test ",
+        "item": "/Test"
+      },
+      {
+        "name": "Test  fr-FR",
+        "item": "/Test/fr-FR"
+      },
+      {
+        "name": "Test  en-US",
+        "item": "/Test/en-US"
       }
     ]
   },

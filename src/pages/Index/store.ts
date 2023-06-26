@@ -1,4 +1,5 @@
 import { useStorage } from '@vueuse/core'
+import type { WritableComputedRef } from 'vue'
 import { remove } from 'lodash-es'
 import type { CustomStoreImplementationOptions, KaElementMap, MergeCustomStore, StoreIdentifier } from 'kapix-components-vue3'
 import { defineStore } from 'pinia'
@@ -26,7 +27,7 @@ function formulaireGesFactory (storeId?: Nullable<StoreIdentifier>) {
         $title: $translate('formulaire-ges.title', 'Formulaire GES'),
         $description: $translate('formulaire-ges.description', ''),
         $publishedTime: new Date('2023-03-15T08:06:34.738Z'),
-        $modifiedTime: new Date('2023-06-23T10:27:57.571Z'),
+        $modifiedTime: new Date('2023-06-26T07:05:22.314Z'),
         // Constants,
         $constants: {},
         // Data,
@@ -38,8 +39,13 @@ function formulaireGesFactory (storeId?: Nullable<StoreIdentifier>) {
             sessionStoragePersistence.value.formStep = formStep
           }
         },
+        $inputs: { list: {} },
         $info: {
           formulaireGes: { scrollTop: 0 },
+          list: {
+            scrollTop: 0,
+            scrollLeft: 0
+          },
           formulaire: {
             scrollTop: 0,
             scrollLeft: 0,
@@ -63,6 +69,15 @@ function formulaireGesFactory (storeId?: Nullable<StoreIdentifier>) {
       }
     },
     getters: {
+      /* @ts-ignore: to allow override in your file */
+      list (): WritableComputedRef<Nullable<KeyValuePair>> {
+        return computed({
+          get: () => this.$inputs.list,
+          set: (value) => {
+            this.$inputs.list = value
+          }
+        })
+      },
       ...customImplement.getters
     },
     actions: {
