@@ -80,11 +80,8 @@ declare namespace Kapix {
       CompteIdCompte: number
       OptimisticConcurrencyVersion: number
       Matiere: PartialEntity<Kapix.Entity.IMatiere>
-      matiereNomMatiere: 'Sulfate de sodium ou d'ammonium' | 'Acide benzoique, sodium benzoate, tocopherol, benzyl benzoate' | 'Acide chlorydrique, phosphorique, sorbique, potassium sorbate' | 'Acide sulfurique' | 'Acier/Fer' | 'Alcool' | 'Aluminium' | 'Ammoniaque' | 'Argent' | 'Carbonate de calcium' | 'Acide citrique, tartrique, nitrique' | 'Acide sulfurique' | 'Bicarbonate de soude/Sodium' | 'Chlorure de sodium, Potassium' | 'Chlore' | 'Cuivre' | 'Epoxy' | 'Fibre de carbone/Graphite' | 'Nickel' | 'Or' | 'Oxyde de zinc' | 'PET' | 'Peinture en bombre' | 'Peinture en bombe' | 'Peinture en pot' | 'Platine (et famille)' | 'Plomb' | 'Résine' | 'Savons, détergents et tensioactifs' | 'Soude' | 'Soufre' | 'Titane' | 'Vernis en bombe' | 'Vernis en pot' | 'Verre'
       MoyenTransport: PartialEntity<Kapix.Entity.IMoyenTransport>
-      moyenTransportId: number
       Compte: PartialEntity<Kapix.Entity.ICompte>
-      compteIdCompte: number
     }
     declare interface ISalarie {
       id: number
@@ -117,7 +114,6 @@ declare namespace Kapix {
       CompteIdCompte: number
       OptimisticConcurrencyVersion: number
       Compte: PartialEntity<Kapix.Entity.ICompte>
-      compteIdCompte: number
       CreatedBy: string
       ModifiedBy: Nullable<string>
       CreatedAt: Date
@@ -142,9 +138,7 @@ declare namespace Kapix {
       CompteIdCompte: number
       OptimisticConcurrencyVersion: number
       Chauffage: PartialEntity<Kapix.Entity.IChauffage>
-      chauffageId: number
       Compte: PartialEntity<Kapix.Entity.ICompte>
-      compteIdCompte: number
       CreatedBy: string
       ModifiedBy: Nullable<string>
       CreatedAt: Date
@@ -176,9 +170,7 @@ declare namespace Kapix {
       CompteIdCompte: number
       OptimisticConcurrencyVersion: number
       Emballage: PartialEntity<Kapix.Entity.IEmballage>
-      emballageId: number
       Compte: PartialEntity<Kapix.Entity.ICompte>
-      compteIdCompte: number
     }
     declare interface IFournitures {
       Id: number
@@ -209,9 +201,7 @@ declare namespace Kapix {
       CompteIdCompte: number
       OptimisticConcurrencyVersion: number
       Fournitures: PartialEntity<Kapix.Entity.IFournitures>
-      fournituresId: number
       Compte: PartialEntity<Kapix.Entity.ICompte>
-      compteIdCompte: number
     }
     declare interface IEnergieRenouvelableUser {
       Id: number
@@ -220,9 +210,7 @@ declare namespace Kapix {
       CompteIdCompte: number
       OptimisticConcurrencyVersion: number
       EnergieRenouvelables: PartialEntity<Kapix.Entity.IEnergieRenouvelables>
-      energieRenouvelablesId: number
       Compte: PartialEntity<Kapix.Entity.ICompte>
-      compteIdCompte: number
       CreatedBy: string
       ModifiedBy: Nullable<string>
       CreatedAt: Date
@@ -235,9 +223,7 @@ declare namespace Kapix {
       CompteIdCompte: number
       OptimisticConcurrencyVersion: number
       Energie: PartialEntity<Kapix.Entity.IEnergie>
-      energieId: number
       Compte: PartialEntity<Kapix.Entity.ICompte>
-      compteIdCompte: number
       CreatedBy: string
       ModifiedBy: Nullable<string>
       CreatedAt: Date
@@ -276,7 +262,6 @@ declare namespace Kapix {
       CompteIdCompte: number
       OptimisticConcurrencyVersion: number
       Compte: PartialEntity<Kapix.Entity.ICompte>
-      compteIdCompte: number
       CreatedBy: string
       ModifiedBy: Nullable<string>
       CreatedAt: Date
@@ -300,9 +285,7 @@ declare namespace Kapix {
       CompteIdCompte: number
       OptimisticConcurrencyVersion: number
       Equipement: PartialEntity<Kapix.Entity.IEquipement>
-      equipementId: number
       Compte: PartialEntity<Kapix.Entity.ICompte>
-      compteIdCompte: number
     }
     declare interface IEquipement {
       Id: number
@@ -355,7 +338,6 @@ declare namespace Kapix {
       CompteIdCompte: number
       OptimisticConcurrencyVersion: number
       Compte: PartialEntity<Kapix.Entity.ICompte>
-      compteIdCompte: number
     }
     declare interface IVente {
       Id: number
@@ -386,7 +368,6 @@ declare namespace Kapix {
       CompteIdCompte: number
       OptimisticConcurrencyVersion: number
       Compte: PartialEntity<Kapix.Entity.ICompte>
-      compteIdCompte: number
     }
     declare interface ITransport {
       Id: number
@@ -401,9 +382,7 @@ declare namespace Kapix {
       CompteIdCompte: number
       OptimisticConcurrencyVersion: number
       Salarie: PartialEntity<Kapix.Entity.ISalarie>
-      salarieId: number
       Compte: PartialEntity<Kapix.Entity.ICompte>
-      compteIdCompte: number
       MoyenTransports: PartialEntities<Kapix.Entity.IMoyenTransport>
       CreatedBy: string
       ModifiedBy: Nullable<string>
@@ -421,7 +400,6 @@ declare namespace Kapix {
       CompteIdCompte: number
       OptimisticConcurrencyVersion: number
       Compte: PartialEntity<Kapix.Entity.ICompte>
-      compteIdCompte: number
       CreatedBy: string
       ModifiedBy: Nullable<string>
       CreatedAt: Date
@@ -453,9 +431,7 @@ declare namespace Kapix {
       CompteIdCompte: number
       OptimisticConcurrencyVersion: number
       GenreDechet: PartialEntity<Kapix.Entity.IGenreDechet>
-      genreDechetId: number
       Compte: PartialEntity<Kapix.Entity.ICompte>
-      compteIdCompte: number
     }
     declare interface IPoubelleUser {
       Id: number
@@ -463,9 +439,7 @@ declare namespace Kapix {
       CompteIdCompte: number
       OptimisticConcurrencyVersion: number
       Poubelle: PartialEntity<Kapix.Entity.IPoubelle>
-      poubelleId: number
       Compte: PartialEntity<Kapix.Entity.ICompte>
-      compteIdCompte: number
       CreatedBy: string
       ModifiedBy: Nullable<string>
       CreatedAt: Date
@@ -512,7 +486,6 @@ declare namespace Kapix {
       CompteIdCompte: number
       OptimisticConcurrencyVersion: number
       Compte: PartialEntity<Kapix.Entity.ICompte>
-      compteIdCompte: number
       CreatedBy: string
       ModifiedBy: Nullable<string>
       CreatedAt: Date

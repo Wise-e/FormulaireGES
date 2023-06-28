@@ -27,9 +27,9 @@ function formulaireGesFactory (storeId?: Nullable<StoreIdentifier>) {
         $title: $translate('formulaire-ges.title', 'Formulaire GES'),
         $description: $translate('formulaire-ges.description', ''),
         $publishedTime: new Date('2023-03-15T08:06:34.738Z'),
-        $modifiedTime: new Date('2023-06-26T12:54:04.126Z'),
+        $modifiedTime: new Date('2023-06-28T07:30:43.980Z'),
         // Constants,
-        $constants: {},
+        $constants: { formulaireDisplay: 's9sSKdPVNBK1WRUzATzFcQ' },
         // Data,
         $data: {
           get formStep () {
@@ -83,7 +83,7 @@ function formulaireGesFactory (storeId?: Nullable<StoreIdentifier>) {
     actions: {
       /* @ts-ignore: to allow override in your file */
       commencerLeFormulaireClick () {
-        this.$data.formStep = 1
+        // this.$elements['formulaire'].displayItem.update({ display: this.$constants.formulaireDisplay })
       },
       /* @ts-ignore: to allow override in your file */
       getStoreInstance (storeId?: Nullable<StoreIdentifier>) {

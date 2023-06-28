@@ -52,15 +52,13 @@
               `Formulaire GES Emballage`,
               `Formulaire GES Transport`,
               `Formulaire GES Dechets`
-            ],
-            display: `s9sSKdPVNBK1WRUzATzFcQ`
+            ]
           }">
           <KaButton
             code="commencer-le-formulaire"
             :options="{
               ripple: true,
-              click: page.commencerLeFormulaireClick,
-              $state: { selected: page.$data.formStep === 1 }
+              click: page.commencerLeFormulaireClick
             }">
             <span v-html="t('formulaireGes.container.container1.formulaire.commencerLeFormulaire.value', `Commencer le formulaire`)" />
           </KaButton>
