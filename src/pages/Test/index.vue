@@ -14,13 +14,7 @@
     <!-- MatiereUser Form -->
     <KaContainer
       code="matiere-user-form"
-      :data="page.$info.matiereUserForm"
-      :options="{
-        displays: [
-          `Success`,
-          `Error`
-        ]
-      }">
+      :data="page.$info.matiereUserForm">
       <!-- Form content -->
       <KaContainer code="form-content">
         <KaSelectInput
@@ -208,34 +202,12 @@
         style: {
           backgroundColor: appData.theme.backgroundColor2,
           color: appData.theme.fontColor2
-        },
-        displays: [
-          `Success`,
-          `Error`,
-          `Formulaire GES Matières`,
-          `Formulaire GES Agricole`,
-          `Formulaire GES Energie`,
-          `Formulaire GES Equipement`,
-          `Formulaire Fourniture`,
-          `Formulaire GES Batiment`,
-          `Formulaire GES Chauffage`,
-          `Formulaire GES Energie Renouvelable`,
-          `Formulaire GES Vente`,
-          `Formulaire GES Emballage`,
-          `Formulaire GES Transport`,
-          `Formulaire GES Dechets`
-        ]
+        }
       }">
       <!-- Agricole Form -->
       <KaContainer
         code="agricole-form"
-        :data="page.$info.agricoleForm"
-        :options="{
-          displays: [
-            `Success`,
-            `Error`
-          ]
-        }">
+        :data="page.$info.agricoleForm">
         <!-- Form content -->
         <KaContainer code="container-1">
           <KaNumberInput
@@ -291,13 +263,7 @@
       <!-- EnergieUser Form -->
       <KaContainer
         code="energie-user-form"
-        :data="page.$info.energieUserForm"
-        :options="{
-          displays: [
-            `Success`,
-            `Error`
-          ]
-        }">
+        :data="page.$info.energieUserForm">
         <!-- Form content -->
         <KaContainer code="container-2">
           <KaNumberInput
@@ -338,13 +304,7 @@
       <!-- EquipementUser Form -->
       <KaContainer
         code="equipement-user-form"
-        :data="page.$info.equipementUserForm"
-        :options="{
-          displays: [
-            `Success`,
-            `Error`
-          ]
-        }">
+        :data="page.$info.equipementUserForm">
         <!-- Form content -->
         <KaContainer code="container-3">
           <KaNumberInput
@@ -429,13 +389,7 @@
       <!-- FournitureUser Form -->
       <KaContainer
         code="fourniture-user-form"
-        :data="page.$info.fournitureUserForm"
-        :options="{
-          displays: [
-            `Success`,
-            `Error`
-          ]
-        }">
+        :data="page.$info.fournitureUserForm">
         <!-- Form content -->
         <KaContainer code="container-5">
           <KaNumberInput
@@ -458,13 +412,7 @@
       <!-- Batiment Form -->
       <KaContainer
         code="batiment-form"
-        :data="page.$info.batimentForm"
-        :options="{
-          displays: [
-            `Success`,
-            `Error`
-          ]
-        }">
+        :data="page.$info.batimentForm">
         <!-- Form content -->
         <KaContainer code="container-6">
           <KaSelectInput
@@ -504,13 +452,7 @@
       <!-- ChauffageUser Form -->
       <KaContainer
         code="chauffage-user-form"
-        :data="page.$info.chauffageUserForm"
-        :options="{
-          displays: [
-            `Success`,
-            `Error`
-          ]
-        }">
+        :data="page.$info.chauffageUserForm">
         <!-- Form content -->
         <KaContainer code="container-7">
           <KaNumberInput
@@ -551,13 +493,7 @@
       <!-- EnergieRenouvelableUser Form -->
       <KaContainer
         code="energie-renouvelable-user-form"
-        :data="page.$info.energieRenouvelableUserForm"
-        :options="{
-          displays: [
-            `Success`,
-            `Error`
-          ]
-        }">
+        :data="page.$info.energieRenouvelableUserForm">
         <!-- Form content -->
         <KaContainer code="container-8">
           <KaNumberInput
@@ -580,13 +516,7 @@
       <!-- Vente Form -->
       <KaContainer
         code="vente-form"
-        :data="page.$info.venteForm"
-        :options="{
-          displays: [
-            `Success`,
-            `Error`
-          ]
-        }">
+        :data="page.$info.venteForm">
         <!-- Form content -->
         <KaContainer code="container-9">
           <KaNumberInput
@@ -733,13 +663,7 @@
       <!-- EmballageUser Form -->
       <KaContainer
         code="emballage-user-form"
-        :data="page.$info.emballageUserForm"
-        :options="{
-          displays: [
-            `Success`,
-            `Error`
-          ]
-        }">
+        :data="page.$info.emballageUserForm">
         <!-- Form content -->
         <KaContainer code="container-11">
           <KaNumberInput
@@ -792,13 +716,7 @@
       <!-- Transport Form -->
       <KaContainer
         code="transport-form"
-        :data="page.$info.transportForm"
-        :options="{
-          displays: [
-            `Success`,
-            `Error`
-          ]
-        }">
+        :data="page.$info.transportForm">
         <!-- Form content -->
         <KaContainer code="container-13">
           <KaNumberInput
@@ -845,13 +763,7 @@
       <!-- DechetsQuestion Form -->
       <KaContainer
         code="dechets-question-form"
-        :data="page.$info.dechetsQuestionForm"
-        :options="{
-          displays: [
-            `Success`,
-            `Error`
-          ]
-        }">
+        :data="page.$info.dechetsQuestionForm">
         <!-- Form content -->
         <KaContainer code="container-14">
           <KaYesNoInput
@@ -923,13 +835,7 @@
       <!-- TransportQuestion Form -->
       <KaContainer
         code="transport-question-form"
-        :data="page.$info.transportQuestionForm"
-        :options="{
-          displays: [
-            `Success`,
-            `Error`
-          ]
-        }">
+        :data="page.$info.transportQuestionForm">
         <!-- Form content -->
         <KaContainer code="container-16">
           <KaSelectInput

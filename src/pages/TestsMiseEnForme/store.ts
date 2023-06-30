@@ -235,7 +235,16 @@ function testsMiseEnFormeFactory (storeId?: Nullable<StoreIdentifier>) {
               distanceMagasin: 'Même ville',
               provenanceMagasin: 'Producteur',
               nombreEntrepriseCommande: 0,
-              poidsMatiere: 0
+              poidsMatiere: 0,
+              Matiere: {
+                mesureMatiere: 'Litres',
+                categorieMatiere: 'Produits chimiques et alcool'
+              },
+              MoyenTransport: {
+                carburantTransport: 'Electrique',
+                consoTransport: 0
+              },
+              Compte: { Admin: false }
             } as Partial<Kapix.Entity.IMatiereUser>
           }
         },

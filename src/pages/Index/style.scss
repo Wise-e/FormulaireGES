@@ -79,15 +79,51 @@
 // Formulaire GES > Container > Container > Formulaire
 .formulaire-p0 {
   &.outer-style {
-    width: 100%;
+    height: 100%;
+    width: 80%;
+    min-height: 0;
     min-width: 0;
-    padding: 10px;
     z-index: 998;
   }
+  &.inner-style {
+    height: 100%;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+    overflow: auto;
+  }
+  @include media-breakpoint-down(xs) {
+    &.outer-style {
+      width: 100%;
+      overflow: inherit;
+    }
+    &.template-style {
+      max-width: none;
+    }
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > h1
+.vous-avez-fini-le-questionnaire-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    z-index: 1000;
+  }
   &.property-style {
-    border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > MatiereUser Form
+.matiere-user-form-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    z-index: 1000;
+  }
+  &.property-style {
     padding: 10px;
   }
   &.scroller-style {
@@ -95,6 +131,2563 @@
     flex-wrap: nowrap;
     align-content: inherit;
     overflow: auto;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > MatiereUser Form > Form content
+.form-content-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    z-index: 999;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > MatiereUser Form > Form content > Comment vous les procurez-vous ?
+.comment-vous-les-procurez-vous-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 1000;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > MatiereUser Form > Form content > text
+.choisissez-votre-matiere-p0 {
+  &.outer-style {
+    z-index: 999;
+  }
+  &.property-style {
+    overflow: hidden;
+    font-size: 16px;
+    padding: 15px;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > MatiereUser Form > Form content > Quel est la catégorie de votre matière ?
+.quel-est-la-categorie-de-votre-matiere-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 998;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > MatiereUser Form > Form content > text
+.quels-choix-caracterisent-p0 {
+  &.outer-style {
+    z-index: 997;
+  }
+  &.property-style {
+    overflow: hidden;
+    padding: 15px;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > MatiereUser Form > Form content > Matiere
+.matiere-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 996;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > MatiereUser Form > Form content > Où sont-ils situés par rapport à vous ?
+.ou-sont-ils-situes-par-rapport-a-vous-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 995;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > MatiereUser Form > Form content > Quel est le nom de votre matière
+.quel-est-le-nom-de-votre-matiere-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 994;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > MatiereUser Form > Form content > Compte Id Compte
+.compte-id-compte-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 993;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > MatiereUser Form > Form content > Quel est la consommation du véhicule ?
+.quel-est-la-consommation-du-vehicule-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 992;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > MatiereUser Form > Form content > Quel est le poids de votre matière ?
+.quel-est-le-poids-de-votre-matiere-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 991;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > MatiereUser Form > Form content > Quelle est la provenance de vos matières premières?
+.quelle-est-la-provenance-de-vos-matieres-p-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 990;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > MatiereUser Form > Form content > Comment récupérez vous votre commande ?
+.comment-recuperez-vous-votre-commande-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 989;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > MatiereUser Form > Form content > Matière neuve
+.matiere-neuve-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 988;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > MatiereUser Form > Form content > Matière occasion
+.matiere-occasion-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 987;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > MatiereUser Form > Form content > Matière récupérées
+.matiere-recuperees-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 986;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > MatiereUser Form > Form content > Matière issue du recyclage
+.matiere-issue-du-recyclage-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 985;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > MatiereUser Form > Form content > Matière auto-produite
+.matiere-auto-produite-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 984;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > MatiereUser Form > Form content > Faites-vous des commandes groupées avec d'autres entreprises ?
+.faites-vous-des-commandes-groupees-avec-d-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 983;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > MatiereUser Form > Form content > Pour quelle raison ne vous approvisionnez-vous pas plus près ?
+.pour-quelle-raison-ne-vous-approvisionne-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 982;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > MatiereUser Form > Form content > En êtes vous sur ?
+.en-etes-vous-sur-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 981;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > MatiereUser Form > Form content > Avez-vous déjà pensé à changer votre processus d'approvisionnement ?
+.avez-vous-deja-pense-a-changer-votre-proce-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 980;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > MatiereUser Form > Form content > Saisonnalité
+.saisonnalite-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 979;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > MatiereUser Form > Form content > Moyen Transport
+.moyen-transport-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 978;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > MatiereUser Form > Bouton matière
+.bouton-matiere-p0 {
+  &.outer-style {
+    height: 118px;
+    width: 99.995%;
+    min-height: 118px;
+    min-width: 0;
+    align-self: center;
+    z-index: 999;
+  }
+  &.inner-style {
+    height: 100%;
+  }
+  &.template-style {
+    max-height: 118px;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+  }
+  @include media-breakpoint-down(xs) {
+    &.outer-style {
+      width: 100%;
+      overflow: inherit;
+    }
+    &.template-style {
+      max-width: none;
+    }
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > MatiereUser Form > Bouton matière > Nouvelle matière
+.nouvelle-matiere-p0 {
+  &.outer-style {
+    width: 40%;
+    min-width: 0;
+    padding: 40px 5px 5px 5px;
+    z-index: 999;
+  }
+  &.property-style {
+    border-radius: 4px;
+    overflow: hidden;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 3px 3px -2px rgba(0, 0, 0, 0.12);
+    padding: 10px;
+    cursor: pointer;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > MatiereUser Form > Bouton matière > Suivant
+.suivant-p0 {
+  &.outer-style {
+    width: 40%;
+    min-width: 0;
+    align-self: flex-end;
+    padding: 40px 5px 5px 5px;
+    z-index: 998;
+  }
+  &.property-style {
+    border-radius: 4px;
+    overflow: hidden;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 3px 3px -2px rgba(0, 0, 0, 0.12);
+    padding: 10px;
+    cursor: pointer;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Agricole Form
+.agricole-form-p0 {
+  &.outer-style {
+    height: 100%;
+    width: 100%;
+    min-height: 0;
+    min-width: 0;
+    z-index: 1000;
+  }
+  &.inner-style {
+    height: 100%;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+    overflow: auto;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Agricole Form > Form content
+.container-2-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    z-index: 999;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Agricole Form > Form content > Combien de tête ?
+.combien-de-tete-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 999;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Agricole Form > Form content > Quel est la surface de votre exploitation agricole?
+.quel-est-la-surface-de-votre-exploitation-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 998;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Agricole Form > Form content > Utilisez- vous des machines agricoles?
+.utilisez-vous-des-machines-agricoles-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 997;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Agricole Form > Form content > Compost
+.compost-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 996;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Agricole Form > Form content > Engraischimique
+.engraischimique-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 995;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Agricole Form > Form content > Avez-vous déjà pensé à opter pour une alternative plus naturel?
+.avez-vous-deja-pense-a-opter-pour-une-alter-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 994;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Agricole Form > Boutons
+.boutons-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    z-index: 998;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Agricole Form > Boutons > Retour
+.retour-p0 {
+  &.outer-style {
+    width: 40%;
+    min-width: 0;
+    padding: 40px 5px 5px 5px;
+    z-index: 999;
+  }
+  &.property-style {
+    border-radius: 4px;
+    overflow: hidden;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 3px 3px -2px rgba(0, 0, 0, 0.12);
+    padding: 10px;
+    cursor: pointer;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Agricole Form > Boutons > Suivant
+.button-1-p0 {
+  &.outer-style {
+    width: 40%;
+    min-width: 0;
+    align-self: flex-end;
+    padding: 40px 5px 5px 5px;
+    z-index: 998;
+  }
+  &.property-style {
+    border-radius: 4px;
+    overflow: hidden;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 3px 3px -2px rgba(0, 0, 0, 0.12);
+    padding: 10px;
+    cursor: pointer;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Agricole Form > Boutons > Suivant
+.button-2-p0 {
+  &.outer-style {
+    width: 40%;
+    min-width: 0;
+    align-self: flex-end;
+    padding: 40px 5px 5px 5px;
+    z-index: 998;
+  }
+  &.property-style {
+    border-radius: 4px;
+    overflow: hidden;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 3px 3px -2px rgba(0, 0, 0, 0.12);
+    padding: 10px;
+    cursor: pointer;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > EnergieUser Form
+.energie-user-form-p0 {
+  &.outer-style {
+    height: 100%;
+    width: 100%;
+    min-height: 0;
+    min-width: 0;
+    z-index: 1000;
+  }
+  &.inner-style {
+    height: 100%;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+    overflow: auto;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > EnergieUser Form > Form content
+.container-3-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    z-index: 999;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > EnergieUser Form > Form content > Valeur Energie User
+.valeur-energie-user-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 999;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > EnergieUser Form > Form content > Energie
+.energie-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 998;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > EnergieUser Form > Form content > Boutons etape formulaire
+.boutons-etape-formulaire-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    z-index: 997;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > EnergieUser Form > Form content > Boutons etape formulaire > Retour
+.button-3-p0 {
+  &.outer-style {
+    width: 40%;
+    min-width: 0;
+    padding: 40px 5px 5px 5px;
+    z-index: 999;
+  }
+  &.property-style {
+    border-radius: 4px;
+    overflow: hidden;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 3px 3px -2px rgba(0, 0, 0, 0.12);
+    padding: 10px;
+    cursor: pointer;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > EnergieUser Form > Form content > Boutons etape formulaire > Suivant
+.button-4-p0 {
+  &.outer-style {
+    width: 40%;
+    min-width: 0;
+    align-self: flex-end;
+    padding: 40px 5px 5px 5px;
+    z-index: 998;
+  }
+  &.property-style {
+    border-radius: 4px;
+    overflow: hidden;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 3px 3px -2px rgba(0, 0, 0, 0.12);
+    padding: 10px;
+    cursor: pointer;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > EnergieUser Form > Form content > Boutons etape formulaire > Enregistrer
+.enregistrer-p0 {
+  &.outer-style {
+    width: 79.685%;
+    min-width: 0;
+    align-self: center;
+    padding: 40px 5px 5px 5px;
+    z-index: 998;
+  }
+  &.property-style {
+    border-radius: 4px;
+    overflow: hidden;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 3px 3px -2px rgba(0, 0, 0, 0.12);
+    padding: 10px;
+    cursor: pointer;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > EquipementUser Form
+.equipement-user-form-p0 {
+  &.outer-style {
+    height: 100%;
+    width: 100%;
+    min-height: 0;
+    min-width: 0;
+    z-index: 1000;
+  }
+  &.inner-style {
+    height: 100%;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+    overflow: auto;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > EquipementUser Form > Form content
+.container-4-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    z-index: 999;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > EquipementUser Form > Form content > Nombre Equipement
+.nombre-equipement-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 999;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > EquipementUser Form > Form content > Depuis combien de temps possédez vous ces équipements?
+.depuis-combien-de-temps-possedez-vous-ces-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 998;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > EquipementUser Form > Form content > Vos équipements ont-ils été achetés neufs, reconditionnés ou de seconde main? Sont-ils loués?
+.vos-equipements-ont-ils-ete-achetes-neufs-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 997;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > EquipementUser Form > Form content > Combien de temps gardez vous votre matériel en moyenne?
+.combien-de-temps-gardez-vous-votre-materi-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 996;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > EquipementUser Form > Form content > Qu'est-ce qui vous pousse à vous en débarasser?
+.quest-ce-qui-vous-pousse-a-vous-en-debarass-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 995;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > EquipementUser Form > Form content > Que faites vous de vos fournitures une fois qu'elles ne servent plus?
+.que-faites-vous-de-vos-fournitures-une-foi-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 994;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > EquipementUser Form > Form content > Partager vous l'usage des machines avec d'autres entreprises?
+.partager-vous-lusage-des-machines-avec-da-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 993;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > EquipementUser Form > Form content > Equipement
+.equipement-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 992;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > EquipementUser Form > Form content > Boutons etape formulaire
+.container-5-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    z-index: 991;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > EquipementUser Form > Form content > Boutons etape formulaire > Retour
+.button-5-p0 {
+  &.outer-style {
+    width: 40%;
+    min-width: 0;
+    padding: 40px 5px 5px 5px;
+    z-index: 1000;
+  }
+  &.property-style {
+    border-radius: 4px;
+    overflow: hidden;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 3px 3px -2px rgba(0, 0, 0, 0.12);
+    padding: 10px;
+    cursor: pointer;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > EquipementUser Form > Form content > Boutons etape formulaire > Suivant
+.button-6-p0 {
+  &.outer-style {
+    width: 40%;
+    min-width: 0;
+    align-self: flex-end;
+    padding: 40px 5px 5px 5px;
+    z-index: 999;
+  }
+  &.property-style {
+    border-radius: 4px;
+    overflow: hidden;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 3px 3px -2px rgba(0, 0, 0, 0.12);
+    padding: 10px;
+    cursor: pointer;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > EquipementUser Form > Form content > Boutons etape formulaire > Enregistrer
+.button-7-p0 {
+  &.outer-style {
+    width: 79.685%;
+    min-width: 0;
+    align-self: center;
+    padding: 40px 5px 5px 5px;
+    z-index: 998;
+  }
+  &.property-style {
+    border-radius: 4px;
+    overflow: hidden;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 3px 3px -2px rgba(0, 0, 0, 0.12);
+    padding: 10px;
+    cursor: pointer;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > FournitureUser Form
+.fourniture-user-form-p0 {
+  &.outer-style {
+    height: 100%;
+    width: 100%;
+    min-height: 0;
+    min-width: 0;
+    z-index: 1000;
+  }
+  &.inner-style {
+    height: 100%;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+    overflow: auto;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > FournitureUser Form > Form content
+.container-6-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    z-index: 999;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > FournitureUser Form > Form content > Valeur Fourniture Utilisees
+.valeur-fourniture-utilisees-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 999;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > FournitureUser Form > Form content > Fournitures
+.fournitures-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 998;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Boutons retour suivant
+.boutons-retour-suivant-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    z-index: 999;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Boutons retour suivant > Retour
+.button-8-p0 {
+  &.outer-style {
+    width: 40%;
+    min-width: 0;
+    padding: 40px 5px 5px 5px;
+    z-index: 999;
+  }
+  &.property-style {
+    border-radius: 4px;
+    overflow: hidden;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 3px 3px -2px rgba(0, 0, 0, 0.12);
+    padding: 10px;
+    cursor: pointer;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Boutons retour suivant > Suivant
+.button-9-p0 {
+  &.outer-style {
+    width: 40%;
+    min-width: 0;
+    align-self: flex-end;
+    padding: 40px 5px 5px 5px;
+    z-index: 998;
+  }
+  &.property-style {
+    border-radius: 4px;
+    overflow: hidden;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 3px 3px -2px rgba(0, 0, 0, 0.12);
+    padding: 10px;
+    cursor: pointer;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Boutons retour suivant > Enregistrer
+.button-10-p0 {
+  &.outer-style {
+    width: 79.685%;
+    min-width: 0;
+    align-self: center;
+    padding: 40px 5px 5px 5px;
+    z-index: 998;
+  }
+  &.property-style {
+    border-radius: 4px;
+    overflow: hidden;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 3px 3px -2px rgba(0, 0, 0, 0.12);
+    padding: 10px;
+    cursor: pointer;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Batiment Form
+.batiment-form-p0 {
+  &.outer-style {
+    height: 100%;
+    width: 100%;
+    min-height: 0;
+    min-width: 0;
+    z-index: 1000;
+  }
+  &.inner-style {
+    height: 100%;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+    overflow: auto;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Batiment Form > Form content
+.container-7-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    z-index: 999;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Batiment Form > Form content > Dans quel genre de batiment ont lieu la production de vos produits?
+.dans-quel-genre-de-batiment-ont-lieu-la-pro-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 999;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Batiment Form > Form content > Quel est la surface total du bâtiment?
+.quel-est-la-surface-total-du-batiment-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 998;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Batiment Form > Form content > Il y a-t-il d'autres entreprises au sein du bâtiment?
+.il-yat-il-dautres-entreprises-au-sein-du-ba-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 997;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Batiment Form > Form content > Quel est la classe énergétique du bâtiment?
+.quel-est-la-classe-energetique-du-batimen-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 996;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Batiment Form > Form content > Quel est la consommation electrique du bâtiment? (euros ou kWh)
+.quel-est-la-consommation-electrique-du-ba-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 995;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Batiment Form > Form content > Partagez vous l'usage des machines avec d'autres entreprises?
+.partagez-vous-lusage-des-machines-avec-da-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 994;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Boutons retour suivant enregistrer
+.boutons-retour-suivant-enregistrer-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    z-index: 999;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Boutons retour suivant enregistrer > Retour
+.button-11-p0 {
+  &.outer-style {
+    width: 40%;
+    min-width: 0;
+    padding: 40px 5px 5px 5px;
+    z-index: 999;
+  }
+  &.property-style {
+    border-radius: 4px;
+    overflow: hidden;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 3px 3px -2px rgba(0, 0, 0, 0.12);
+    padding: 10px;
+    cursor: pointer;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Boutons retour suivant enregistrer > Suivant
+.button-12-p0 {
+  &.outer-style {
+    width: 40%;
+    min-width: 0;
+    align-self: flex-end;
+    padding: 40px 5px 5px 5px;
+    z-index: 998;
+  }
+  &.property-style {
+    border-radius: 4px;
+    overflow: hidden;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 3px 3px -2px rgba(0, 0, 0, 0.12);
+    padding: 10px;
+    cursor: pointer;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > ChauffageUser Form
+.chauffage-user-form-p0 {
+  &.outer-style {
+    height: 100%;
+    width: 100%;
+    min-height: 0;
+    min-width: 0;
+    z-index: 1000;
+  }
+  &.inner-style {
+    height: 100%;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+    overflow: auto;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > ChauffageUser Form > Form content
+.container-8-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    z-index: 999;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > ChauffageUser Form > Form content > Valeur Chauffer
+.valeur-chauffer-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 999;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > ChauffageUser Form > Form content > Chauffage
+.chauffage-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 998;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > ChauffageUser Form > Form content > Boutons retour suivant enregistrer
+.container-9-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    z-index: 997;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > ChauffageUser Form > Form content > Boutons retour suivant enregistrer > Retour
+.button-13-p0 {
+  &.outer-style {
+    width: 50%;
+    min-width: 0;
+    padding: 40px 5px 5px 5px;
+    z-index: 999;
+  }
+  &.property-style {
+    border-radius: 4px;
+    overflow: hidden;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 3px 3px -2px rgba(0, 0, 0, 0.12);
+    padding: 10px;
+    cursor: pointer;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > ChauffageUser Form > Form content > Boutons retour suivant enregistrer > Suivant
+.button-14-p0 {
+  &.outer-style {
+    width: 50%;
+    min-width: 0;
+    align-self: flex-end;
+    padding: 40px 5px 5px 5px;
+    z-index: 998;
+  }
+  &.property-style {
+    border-radius: 4px;
+    overflow: hidden;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 3px 3px -2px rgba(0, 0, 0, 0.12);
+    padding: 10px;
+    cursor: pointer;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > ChauffageUser Form > Form content > Boutons retour suivant enregistrer > Enregistrer
+.button-15-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    align-self: center;
+    padding: 40px 5px 5px 5px;
+    z-index: 998;
+  }
+  &.property-style {
+    border-radius: 4px;
+    overflow: hidden;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 3px 3px -2px rgba(0, 0, 0, 0.12);
+    padding: 10px;
+    cursor: pointer;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > EnergieRenouvelableUser Form
+.energie-renouvelable-user-form-p0 {
+  &.outer-style {
+    height: 100%;
+    width: 100%;
+    min-height: 0;
+    min-width: 0;
+    z-index: 1000;
+  }
+  &.inner-style {
+    height: 100%;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+    overflow: auto;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > EnergieRenouvelableUser Form > Form content
+.container-10-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    z-index: 999;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > EnergieRenouvelableUser Form > Form content > Valeur Energie Renouvelable User
+.valeur-energie-renouvelable-user-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 999;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > EnergieRenouvelableUser Form > Form content > Energie renouvelables
+.energie-renouvelables-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 998;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > EnergieRenouvelableUser Form > Boutons retour suivant enregistrer
+.container-11-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    z-index: 998;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > EnergieRenouvelableUser Form > Boutons retour suivant enregistrer > Retour
+.button-16-p0 {
+  &.outer-style {
+    width: 50%;
+    min-width: 0;
+    padding: 40px 5px 5px 5px;
+    z-index: 999;
+  }
+  &.property-style {
+    border-radius: 4px;
+    overflow: hidden;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 3px 3px -2px rgba(0, 0, 0, 0.12);
+    padding: 10px;
+    cursor: pointer;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > EnergieRenouvelableUser Form > Boutons retour suivant enregistrer > Suivant
+.button-17-p0 {
+  &.outer-style {
+    width: 50%;
+    min-width: 0;
+    align-self: flex-end;
+    padding: 40px 5px 5px 5px;
+    z-index: 998;
+  }
+  &.property-style {
+    border-radius: 4px;
+    overflow: hidden;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 3px 3px -2px rgba(0, 0, 0, 0.12);
+    padding: 10px;
+    cursor: pointer;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > EnergieRenouvelableUser Form > Boutons retour suivant enregistrer > Enregistrer
+.button-18-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    align-self: center;
+    padding: 40px 5px 5px 5px;
+    z-index: 998;
+  }
+  &.property-style {
+    border-radius: 4px;
+    overflow: hidden;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 3px 3px -2px rgba(0, 0, 0, 0.12);
+    padding: 10px;
+    cursor: pointer;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Vente Form
+.vente-form-p0 {
+  &.outer-style {
+    height: 100%;
+    width: 100%;
+    min-height: 0;
+    min-width: 0;
+    z-index: 1000;
+  }
+  &.inner-style {
+    height: 100%;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+    overflow: auto;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Vente Form > Form content
+.container-12-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    z-index: 999;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Vente Form > Form content > En moyenne, combien de produits vendez-vous par semaine?
+.en-moyenne-combien-de-produits-vendez-vou-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 999;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Vente Form > Form content > Vos produits sont-ils garantis?
+.vos-produits-sont-ils-garantis-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 998;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Vente Form > Form content > Vos produits sont-ils recyclables?
+.vos-produits-sont-ils-recyclables-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 997;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Vente Form > Form content > Récupérez-vous vos produits en fin de vie?
+.recuperez-vous-vos-produits-en-fin-de-vie-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 996;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Vente Form > Form content > Restaurez-vous les produits?
+.restaurez-vous-les-produits-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 995;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Vente Form > Form content > Locaux
+.locaux-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 994;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Vente Form > Form content > Touristes
+.touristes-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 993;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Vente Form > Form content > <1km
+.k1-km-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 992;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Vente Form > Form content > <10km
+.k10-km-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 991;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Vente Form > Form content > 10 à 20km
+.k-10-a-20-km-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 990;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Vente Form > Form content > <20km
+.k20-km-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 989;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Vente Form > Form content > Routier
+.routier-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 988;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Vente Form > Form content > Maritime
+.maritime-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 987;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Vente Form > Form content > Marketplaces
+.marketplaces-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 986;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Vente Form > Form content > Aérien
+.aerien-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 985;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Vente Form > Form content > Train
+.train-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 984;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Vente Form > Form content > Où votre batiment de fonction est-il placé?
+.ou-votre-batiment-de-fonction-est-il-place-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 983;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Vente Form > Form content > Pourquoi avez-vous choisi cet emplacement?
+.pourquoi-avez-vous-choisi-cet-emplacemen-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 982;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Vente Form > Form content > Quel est son accessibilité?
+.quel-est-son-accessibilite-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 981;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Vente Form > Form content > Qu'est-ce qui pourrait vous pousser à changer d'emplacement?
+.quest-ce-qui-pourrait-vous-pousser-a-chang-p0 {
+  &.outer-style {
+    height: 200px;
+    width: 100%;
+    min-height: 200px;
+    min-width: 0;
+    padding: 5px;
+    z-index: 980;
+  }
+  &.inner-style {
+    height: 100%;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+  &.template-style {
+    max-height: 200px;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Vente Form > Form content > Boutons retour suivant enregistrer
+.container-13-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    z-index: 980;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Vente Form > Form content > Boutons retour suivant enregistrer > Retour
+.button-19-p0 {
+  &.outer-style {
+    width: 40%;
+    min-width: 0;
+    padding: 40px 5px 5px 5px;
+    z-index: 999;
+  }
+  &.property-style {
+    border-radius: 4px;
+    overflow: hidden;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 3px 3px -2px rgba(0, 0, 0, 0.12);
+    padding: 10px;
+    cursor: pointer;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Vente Form > Form content > Boutons retour suivant enregistrer > Suivant
+.button-20-p0 {
+  &.outer-style {
+    width: 40%;
+    min-width: 0;
+    align-self: flex-end;
+    padding: 40px 5px 5px 5px;
+    z-index: 998;
+  }
+  &.property-style {
+    border-radius: 4px;
+    overflow: hidden;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 3px 3px -2px rgba(0, 0, 0, 0.12);
+    padding: 10px;
+    cursor: pointer;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > EmballageUser Form
+.emballage-user-form-p0 {
+  &.outer-style {
+    height: 100%;
+    width: 100%;
+    min-height: 0;
+    min-width: 0;
+    z-index: 1000;
+  }
+  &.inner-style {
+    height: 100%;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+    overflow: auto;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > EmballageUser Form > Form content
+.container-14-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    z-index: 999;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > EmballageUser Form > Form content > Valeur Emballer
+.valeur-emballer-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 999;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > EmballageUser Form > Form content > Resultat Emballer
+.resultat-emballer-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 998;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > EmballageUser Form > Form content > Issue Recycle Emballage
+.issue-recycle-emballage-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 997;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > EmballageUser Form > Form content > Recyclable Emballage
+.recyclable-emballage-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 996;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > EmballageUser Form > Form content > Emballage
+.emballage-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 995;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > EmballageUser Form > Form content > Boutons retour suivant enregistrer
+.container-15-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    z-index: 994;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > EmballageUser Form > Form content > Boutons retour suivant enregistrer > Retour
+.button-21-p0 {
+  &.outer-style {
+    width: 50%;
+    min-width: 0;
+    padding: 40px 5px 5px 5px;
+    z-index: 999;
+  }
+  &.property-style {
+    border-radius: 4px;
+    overflow: hidden;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 3px 3px -2px rgba(0, 0, 0, 0.12);
+    padding: 10px;
+    cursor: pointer;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > EmballageUser Form > Form content > Boutons retour suivant enregistrer > Suivant
+.button-22-p0 {
+  &.outer-style {
+    width: 50%;
+    min-width: 0;
+    align-self: flex-end;
+    padding: 40px 5px 5px 5px;
+    z-index: 998;
+  }
+  &.property-style {
+    border-radius: 4px;
+    overflow: hidden;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 3px 3px -2px rgba(0, 0, 0, 0.12);
+    padding: 10px;
+    cursor: pointer;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > EmballageUser Form > Form content > Boutons retour suivant enregistrer > Enregistrer
+.button-23-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    align-self: center;
+    padding: 40px 5px 5px 5px;
+    z-index: 998;
+  }
+  &.property-style {
+    border-radius: 4px;
+    overflow: hidden;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 3px 3px -2px rgba(0, 0, 0, 0.12);
+    padding: 10px;
+    cursor: pointer;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Transport Form
+.transport-form-p0 {
+  &.outer-style {
+    height: 100%;
+    width: 100%;
+    min-height: 0;
+    min-width: 0;
+    z-index: 1000;
+  }
+  &.inner-style {
+    height: 100%;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+    overflow: auto;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Transport Form > Form content
+.container-16-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    z-index: 999;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Transport Form > Form content > nombre de km domicile/travail
+.nombre-de-km-domicile-travail-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 999;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Transport Form > Form content > Quelle est la consommation de votre véhicule ?
+.quelle-est-la-consommation-de-votre-vehic-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 998;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Transport Form > Form content > Faites vous du covoiturage ?
+.faites-vous-du-covoiturage-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 997;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Transport Form > Form content > Est-ce une voiture de fonction
+.est-ce-une-voiture-de-fonction-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 996;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Transport Form > Form content > Faites vous une moyenne de vos employés ou par employé ?
+.faites-vous-une-moyenne-de-vos-employes-ou-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 995;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Transport Form > Form content > Faites vous des déplacements professionnels ?
+.faites-vous-des-deplacements-profession-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 994;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Transport Form > Form content > Est-ce une location ?
+.est-ce-une-location-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 993;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > Transport Form > Form content > Salarie
+.salarie-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 992;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > TransportQuestion Form
+.transport-question-form-p0 {
+  &.outer-style {
+    height: 100%;
+    width: 100%;
+    min-height: 0;
+    min-width: 0;
+    z-index: 999;
+  }
+  &.inner-style {
+    height: 100%;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+    overflow: auto;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > TransportQuestion Form > Form content
+.container-17-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    z-index: 999;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > TransportQuestion Form > Form content > Regroupez-vous vos déplacements professionnels afin de limiter le déplacement?
+.regroupez-vous-vos-deplacements-profess-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 999;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > TransportQuestion Form > Form content > Votre activité implique-t-elle d'être sur place à chaque étape?
+.votre-activite-implique-t-elle-detre-sur-p-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 998;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > TransportQuestion Form > Form content > Faites-vous une partie de vos taches administratives (prise de contact, devis) à distance?
+.faites-vous-une-partie-de-vos-taches-admin-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 997;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > TransportQuestion Form > Form content > Boutons retour suivant enregistrer
+.container-18-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    z-index: 996;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > TransportQuestion Form > Form content > Boutons retour suivant enregistrer > Retour
+.button-24-p0 {
+  &.outer-style {
+    width: 40%;
+    min-width: 0;
+    padding: 40px 5px 5px 5px;
+    z-index: 999;
+  }
+  &.property-style {
+    border-radius: 4px;
+    overflow: hidden;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 3px 3px -2px rgba(0, 0, 0, 0.12);
+    padding: 10px;
+    cursor: pointer;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > TransportQuestion Form > Form content > Boutons retour suivant enregistrer > Suivant
+.button-25-p0 {
+  &.outer-style {
+    width: 40%;
+    min-width: 0;
+    align-self: flex-end;
+    padding: 40px 5px 5px 5px;
+    z-index: 998;
+  }
+  &.property-style {
+    border-radius: 4px;
+    overflow: hidden;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 3px 3px -2px rgba(0, 0, 0, 0.12);
+    padding: 10px;
+    cursor: pointer;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > DechetsQuestion Form
+.dechets-question-form-p0 {
+  &.outer-style {
+    height: 100%;
+    width: 100%;
+    min-height: 0;
+    min-width: 0;
+    z-index: 1000;
+  }
+  &.inner-style {
+    height: 100%;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+    overflow: auto;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > DechetsQuestion Form > Form content
+.container-19-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    z-index: 999;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > DechetsQuestion Form > Form content > Jetez-vous souvent des déchets (dus à votre activité) à la décheterie?
+.jetez-vous-souvent-des-dechets-dus-a-votre-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 999;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > DechetsQuestion Form > Form content > Pliez-vous vos sièges arrières?
+.pliez-vous-vos-sieges-arrieres-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 998;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > DechetsQuestion Form > Form content > Utilisez-vous une remorque?
+.utilisez-vous-une-remorque-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 997;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > DechetsQuestion Form > Form content > Combien d'allers-retours faites vous en moyenne par mois?
+.combien-dallers-retours-faites-vous-en-mo-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 996;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > DechetsQuestion Form > Form content > Faîtes-vous du compost avec vos déchets organiques ?
+.faites-vous-du-compost-avec-vos-dechets-or-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 995;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > DechetsQuestion Form > Form content > Usage Poubelle Organique
+.usage-poubelle-organique-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    padding: 5px;
+    z-index: 994;
+  }
+  &.property-style {
+    color: #000000ff;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 5px;
+  }
+  &.label-style {
+    font-weight: bold;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > DechetsQuestion Form > Form content > Boutons retour suivant enregistrer
+.container-20-p0 {
+  &.outer-style {
+    width: 100%;
+    min-width: 0;
+    z-index: 994;
+  }
+  &.scroller-style {
+    flex-wrap: wrap;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > DechetsQuestion Form > Form content > Boutons retour suivant enregistrer > Retour
+.button-26-p0 {
+  &.outer-style {
+    width: 40%;
+    min-width: 0;
+    padding: 40px 5px 5px 5px;
+    z-index: 999;
+  }
+  &.property-style {
+    border-radius: 4px;
+    overflow: hidden;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 3px 3px -2px rgba(0, 0, 0, 0.12);
+    padding: 10px;
+    cursor: pointer;
+  }
+}
+// Formulaire GES > Container > Container > Formulaire > DechetsQuestion Form > Form content > Boutons retour suivant enregistrer > Suivant
+.button-27-p0 {
+  &.outer-style {
+    width: 40%;
+    min-width: 0;
+    align-self: flex-end;
+    padding: 40px 5px 5px 5px;
+    z-index: 998;
+  }
+  &.property-style {
+    border-radius: 4px;
+    overflow: hidden;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 3px 3px -2px rgba(0, 0, 0, 0.12);
+    padding: 10px;
+    cursor: pointer;
   }
 }
 // Formulaire GES > Container > Container > Formulaire > button

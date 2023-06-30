@@ -36,7 +36,7 @@ function dashboardFactory (storeId?: Nullable<StoreIdentifier>) {
             isValid: true,
             isDirty: false,
             quickSearch: undefined as Nullable<string>,
-            item: {} as Partial<Kapix.Entity.IDashboard>
+            item: { Compte: { Admin: false } } as Partial<Kapix.Entity.IDashboard>
           }
         },
         ...(customImplement.state && customImplement.state())

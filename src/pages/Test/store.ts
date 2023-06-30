@@ -728,7 +728,16 @@ function testFactory (storeId?: Nullable<StoreIdentifier>) {
               distanceMagasin: 'Même ville',
               provenanceMagasin: 'Producteur',
               nombreEntrepriseCommande: 0,
-              poidsMatiere: 0
+              poidsMatiere: 0,
+              Matiere: {
+                mesureMatiere: 'Litres',
+                categorieMatiere: 'Produits chimiques et alcool'
+              },
+              MoyenTransport: {
+                carburantTransport: 'Electrique',
+                consoTransport: 0
+              },
+              Compte: { Admin: false }
             } as Partial<Kapix.Entity.IMatiereUser>
           },
           formulaireSurUnePage: {
@@ -746,7 +755,16 @@ function testFactory (storeId?: Nullable<StoreIdentifier>) {
               distanceMagasin: 'Même ville',
               provenanceMagasin: 'Producteur',
               nombreEntrepriseCommande: 0,
-              poidsMatiere: 0
+              poidsMatiere: 0,
+              Matiere: {
+                mesureMatiere: 'Litres',
+                categorieMatiere: 'Produits chimiques et alcool'
+              },
+              MoyenTransport: {
+                carburantTransport: 'Electrique',
+                consoTransport: 0
+              },
+              Compte: { Admin: false }
             } as Partial<Kapix.Entity.IMatiereUser>
           },
           agricoleForm: {
@@ -755,7 +773,7 @@ function testFactory (storeId?: Nullable<StoreIdentifier>) {
             isValid: true,
             isDirty: false,
             quickSearch: undefined as Nullable<string>,
-            item: {} as Partial<Kapix.Entity.IAgricole>
+            item: { Compte: { Admin: false } } as Partial<Kapix.Entity.IAgricole>
           },
           energieUserForm: {
             scrollTop: 0,
@@ -763,7 +781,7 @@ function testFactory (storeId?: Nullable<StoreIdentifier>) {
             isValid: true,
             isDirty: false,
             quickSearch: undefined as Nullable<string>,
-            item: {} as Partial<Kapix.Entity.IEnergieUser>
+            item: { Compte: { Admin: false } } as Partial<Kapix.Entity.IEnergieUser>
           },
           equipementUserForm: {
             scrollTop: 0,
@@ -771,7 +789,10 @@ function testFactory (storeId?: Nullable<StoreIdentifier>) {
             isValid: true,
             isDirty: false,
             quickSearch: undefined as Nullable<string>,
-            item: { nombreEquipement: 0 } as Partial<Kapix.Entity.IEquipementUser>
+            item: {
+              nombreEquipement: 0,
+              Compte: { Admin: false }
+            } as Partial<Kapix.Entity.IEquipementUser>
           },
           fournitureUserForm: {
             scrollTop: 0,
@@ -786,7 +807,8 @@ function testFactory (storeId?: Nullable<StoreIdentifier>) {
               tempsGarder: 'Moins d\'un an',
               tempsPossession: 'Moins d\'un an',
               nombrePartageEntreprise: 0,
-              nombreFourniture: 0
+              nombreFourniture: 0,
+              Compte: { Admin: false }
             } as Partial<Kapix.Entity.IFournitureUser>
           },
           batimentForm: {
@@ -795,7 +817,7 @@ function testFactory (storeId?: Nullable<StoreIdentifier>) {
             isValid: true,
             isDirty: false,
             quickSearch: undefined as Nullable<string>,
-            item: {} as Partial<Kapix.Entity.IBatiment>
+            item: { Compte: { Admin: false } } as Partial<Kapix.Entity.IBatiment>
           },
           chauffageUserForm: {
             scrollTop: 0,
@@ -803,7 +825,10 @@ function testFactory (storeId?: Nullable<StoreIdentifier>) {
             isValid: true,
             isDirty: false,
             quickSearch: undefined as Nullable<string>,
-            item: { valeurChauffer: 0 } as Partial<Kapix.Entity.IChauffageUser>
+            item: {
+              valeurChauffer: 0,
+              Compte: { Admin: false }
+            } as Partial<Kapix.Entity.IChauffageUser>
           },
           energieRenouvelableUserForm: {
             scrollTop: 0,
@@ -811,7 +836,10 @@ function testFactory (storeId?: Nullable<StoreIdentifier>) {
             isValid: true,
             isDirty: false,
             quickSearch: undefined as Nullable<string>,
-            item: { valeurEnergieRenouvelableUser: 0 } as Partial<Kapix.Entity.IEnergieRenouvelableUser>
+            item: {
+              valeurEnergieRenouvelableUser: 0,
+              Compte: { Admin: false }
+            } as Partial<Kapix.Entity.IEnergieRenouvelableUser>
           },
           venteForm: {
             scrollTop: 0,
@@ -826,7 +854,8 @@ function testFactory (storeId?: Nullable<StoreIdentifier>) {
               nombreVenteSemaine: 0,
               restaurerProduit: false,
               recupProduit: false,
-              produitRecyclable: false
+              produitRecyclable: false,
+              Compte: { Admin: false }
             } as Partial<Kapix.Entity.IVente>
           },
           emballageUserForm: {
@@ -835,7 +864,10 @@ function testFactory (storeId?: Nullable<StoreIdentifier>) {
             isValid: true,
             isDirty: false,
             quickSearch: undefined as Nullable<string>,
-            item: { valeurEmballer: 0 } as Partial<Kapix.Entity.IEmballageUser>
+            item: {
+              valeurEmballer: 0,
+              Compte: { Admin: false }
+            } as Partial<Kapix.Entity.IEmballageUser>
           },
           transportForm: {
             scrollTop: 0,
@@ -851,6 +883,7 @@ function testFactory (storeId?: Nullable<StoreIdentifier>) {
               calculMoyenne: false,
               fonction: false,
               covoiturage: false,
+              Compte: { Admin: false },
               MoyenTransports: []
             } as Partial<Kapix.Entity.ITransport>
           },
@@ -860,7 +893,7 @@ function testFactory (storeId?: Nullable<StoreIdentifier>) {
             isValid: true,
             isDirty: false,
             quickSearch: undefined as Nullable<string>,
-            item: {} as Partial<Kapix.Entity.IDechetsQuestion>
+            item: { Compte: { Admin: false } } as Partial<Kapix.Entity.IDechetsQuestion>
           },
           transportQuestionForm: {
             scrollTop: 0,
@@ -871,7 +904,8 @@ function testFactory (storeId?: Nullable<StoreIdentifier>) {
             item: {
               regrouperDeplacement: 'Oui j\'essaye de le faire au maximum',
               tachesADistance: false,
-              surplaceObligatoire: false
+              surplaceObligatoire: false,
+              Compte: { Admin: false }
             } as Partial<Kapix.Entity.ITransportQuestion>
           },
           list: {

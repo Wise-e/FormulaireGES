@@ -56,20 +56,20 @@ declare namespace Kapix {
     declare interface IMatiereUser {
       Id: number
       poidsMatiere: number
-      provenanceMagasin: 'Producteur' | 'Magasin' | 'Grossiste' | 'Autre'
+      provenanceMagasin: `Producteur` | `Magasin` | `Grossiste` | `Autre`
       caracteristiqueNeuve: Nullable<number>
       caracteristiqueOccasion: Nullable<number>
       caracteristiqueRecyclage: Nullable<number>
       caracteristiqueRecup: Nullable<number>
       caracteristiqueAutoproduite: Nullable<number>
-      distanceMagasin: 'Même ville' | 'Même département' | 'Même région' | 'Autre Région' | 'Pays frontalier' | 'Autre pays d'Europe' | 'Autre continent'
+      distanceMagasin: `Même ville` | `Même département` | `Même région` | `Autre Région` | `Pays frontalier` | `Autre pays d'Europe` | `Autre continent`
       consoTransport: Nullable<number>
-      provenanceMatiere: 'Même ville' | 'Même département' | 'Même région' | 'Autre région' | 'Pays frontalier' | 'Pays d'Europe' | 'Autre continent' | 'Made in France' | 'Made in Europe' | 'Hors UE' | 'Je ne sais pas'
-      transportMagasin: 'Je ne sais pas' | 'Maritime/Fluvial' | 'Aérien' | 'Train' | 'Routier'
+      provenanceMatiere: `Même ville` | `Même département` | `Même région` | `Autre région` | `Pays frontalier` | `Pays d'Europe` | `Autre continent` | `Made in France` | `Made in Europe` | `Hors UE` | `Je ne sais pas`
+      transportMagasin: `Je ne sais pas` | `Maritime/Fluvial` | `Aérien` | `Train` | `Routier`
       nombreEntrepriseCommande: number
-      plusProcheQ: 'Pour des questions de coût' | 'Par habitude' | 'Partenariat longue durée' | 'N'existe pas plus près'
-      certitudeduChoixQ: 'Sûr et certain' | 'à ma connaissance' | 'Je ne sais pas'
-      changerApprovisionnementQ: 'Oui, mais je ne sais pas encore quand' | 'Non, j'en suis satisfait' | 'Non, je ne peux pas me le permettre pour le moment' | 'Oui, je suis en train de le faire'
+      plusProcheQ: `Pour des questions de coût` | `Par habitude` | `Partenariat longue durée` | `N'existe pas plus près`
+      certitudeduChoixQ: `Sûr et certain` | `à ma connaissance` | `Je ne sais pas`
+      changerApprovisionnementQ: `Oui, mais je ne sais pas encore quand` | `Non, j'en suis satisfait` | `Non, je ne peux pas me le permettre pour le moment` | `Oui, je suis en train de le faire`
       Saisonnalite: Nullable<boolean>
       CreatedBy: string
       ModifiedBy: Nullable<string>
@@ -110,7 +110,7 @@ declare namespace Kapix {
       nombreDeMachines: Nullable<number>
       compost: Nullable<number>
       engraischimique: Nullable<number>
-      alternativenaturelQ: Nullable<'Non jamais' | 'Oui mais je n'ai pas pu trouver mieux pour le moment' | 'Oui je pense le faire prochainement'> | Nullable<Array<any>>
+      alternativenaturelQ: Nullable<`Non jamais` | `Oui mais je n'ai pas pu trouver mieux pour le moment` | `Oui je pense le faire prochainement`> | Nullable<Array<any>>
       CompteIdCompte: number
       OptimisticConcurrencyVersion: number
       Compte: PartialEntity<Kapix.Entity.ICompte>
@@ -186,11 +186,11 @@ declare namespace Kapix {
     declare interface IFournitureUser {
       Id: number
       nombreFourniture: number
-      tempsPossession: 'Moins d'un an' | 'Entre 1 et 5 ans' | 'Entre 5 et 10 ans' | 'Plus de 10 ans'
-      tempsGarder: 'Moins d'un an' | 'Plus de 10 ans' | 'Entre 1 et 5 ans' | 'Entre 5 et 10 ans'
-      caractFourniture: 'Loué' | 'Neuf' | 'Reconditionnés' | 'Seconde main'
-      raisonJeterFourniture: 'Manque de performance' | 'Amortissement comptable' | 'Usure' | 'Evolution de la technologie'
-      jeterFourniture: 'Don' | 'Revente' | 'Décheterie' | 'Recyclage'
+      tempsPossession: `Moins d'un an` | `Entre 1 et 5 ans` | `Entre 5 et 10 ans` | `Plus de 10 ans`
+      tempsGarder: `Moins d'un an` | `Plus de 10 ans` | `Entre 1 et 5 ans` | `Entre 5 et 10 ans`
+      caractFourniture: `Loué` | `Neuf` | `Reconditionnés` | `Seconde main`
+      raisonJeterFourniture: `Manque de performance` | `Amortissement comptable` | `Usure` | `Evolution de la technologie`
+      jeterFourniture: `Don` | `Revente` | `Décheterie` | `Recyclage`
       nombrePartageEntreprise: number
       resultat: Nullable<number>
       CreatedBy: string
@@ -243,9 +243,9 @@ declare namespace Kapix {
     declare interface IPoubelle {
       Id: number
       clecomposite: Nullable<string>
-      typePoubelle: 'Sac' | 'Poubelle' | 'Benne'
-      taillePoubelle: 'Moins de 30L' | 'Entre 30L et 100L' | 'Entre 100L et 150L' | '240L' | '660L' | '770L' | '1100L' | '3 à 6m3' | '7 à 15m3' | 'Plus de 20m3'
-      Couleur: 'Noire' | 'Jaune' | 'Verte' | 'Bleue'
+      typePoubelle: `Sac` | `Poubelle` | `Benne`
+      taillePoubelle: `Moins de 30L` | `Entre 30L et 100L` | `Entre 100L et 150L` | `240L` | `660L` | `770L` | `1100L` | `3 à 6m3` | `7 à 15m3` | `Plus de 20m3`
+      Couleur: `Noire` | `Jaune` | `Verte` | `Bleue`
       valeurPoubelle: number
       CreatedBy: string
       ModifiedBy: Nullable<string>
@@ -256,7 +256,7 @@ declare namespace Kapix {
     }
     declare interface ITransportQuestion {
       Id: number
-      regrouperDeplacement: 'Oui j'essaye de le faire au maximum' | 'J'ai déjà pensé à le faire mais je n'en ai pas eu l'occasion' | 'Non je ne peux pas me le permettre'
+      regrouperDeplacement: `Oui j'essaye de le faire au maximum` | `J'ai déjà pensé à le faire mais je n'en ai pas eu l'occasion` | `Non je ne peux pas me le permettre`
       surplaceObligatoire: boolean
       tachesADistance: boolean
       CompteIdCompte: number
@@ -270,11 +270,11 @@ declare namespace Kapix {
     declare interface IEquipementUser {
       Id: number
       nombreEquipement: number
-      dureeEquipement: Nullable<'Moins d'un an' | 'Entre 1 et 5 ans' | 'Entre 5 et 10 ans' | 'Plus de 10 ans'>
-      caractEquipement: Nullable<'Loué' | 'Neuf' | 'Reconditionné' | 'Seconde main'>
-      garderEquipement: Nullable<'Moins d'un an' | 'Entre 1 et 5 ans' | 'Entre 5 et 10 ans' | 'Plus de 10 ans'>
-      raisonJeterEquipement: Nullable<'Manque de performance' | 'Amortissement Comptable' | 'Usure' | 'Evolution de la technologie'>
-      jeterEquipement: Nullable<'Recyclage' | 'Décheterie' | 'Revente' | 'Don'>
+      dureeEquipement: Nullable<`Moins d'un an` | `Entre 1 et 5 ans` | `Entre 5 et 10 ans` | `Plus de 10 ans`>
+      caractEquipement: Nullable<`Loué` | `Neuf` | `Reconditionné` | `Seconde main`>
+      garderEquipement: Nullable<`Moins d'un an` | `Entre 1 et 5 ans` | `Entre 5 et 10 ans` | `Plus de 10 ans`>
+      raisonJeterEquipement: Nullable<`Manque de performance` | `Amortissement Comptable` | `Usure` | `Evolution de la technologie`>
+      jeterEquipement: Nullable<`Recyclage` | `Décheterie` | `Revente` | `Don`>
       nombreEntreprisePartage: Nullable<number>
       CreatedBy: string
       resultat: Nullable<number>
@@ -301,7 +301,7 @@ declare namespace Kapix {
     declare interface IEnergie {
       Id: number
       TexteCourt: string
-      uniteEnergie: Nullable<'Litres' | 'KG' | 'Stère'>
+      uniteEnergie: Nullable<`Litres` | `KG` | `Stère`>
       valeurEnergieLitreouM3: Nullable<number>
       valeurKg: Nullable<number>
       CreatedBy: string
@@ -312,9 +312,9 @@ declare namespace Kapix {
       EnergieUsers: PartialEntities<Kapix.Entity.IEnergieUser>
     }
     declare interface IMatiere {
-      nomMatiere: 'Sulfate de sodium ou d'ammonium' | 'Acide benzoique, sodium benzoate, tocopherol, benzyl benzoate' | 'Acide chlorydrique, phosphorique, sorbique, potassium sorbate' | 'Acide sulfurique' | 'Acier/Fer' | 'Alcool' | 'Aluminium' | 'Ammoniaque' | 'Argent' | 'Carbonate de calcium' | 'Acide citrique, tartrique, nitrique' | 'Acide sulfurique' | 'Bicarbonate de soude/Sodium' | 'Chlorure de sodium, Potassium' | 'Chlore' | 'Cuivre' | 'Epoxy' | 'Fibre de carbone/Graphite' | 'Nickel' | 'Or' | 'Oxyde de zinc' | 'PET' | 'Peinture en bombre' | 'Peinture en bombe' | 'Peinture en pot' | 'Platine (et famille)' | 'Plomb' | 'Résine' | 'Savons, détergents et tensioactifs' | 'Soude' | 'Soufre' | 'Titane' | 'Vernis en bombe' | 'Vernis en pot' | 'Verre'
-      categorieMatiere: 'Produits chimiques et alcool' | 'Peinture/ Vernis/ Résines/Teinture/En' | 'Plastiques' | 'Métaux' | 'Verre' | 'Papeterie' | 'Autres' | 'Minéraux' | 'Produits d'hygiène et nettoyage' | 'Textile' | 'Bois' | 'Alimentaire'
-      mesureMatiere: 'Litres' | 'KG' | 'Nombre'
+      nomMatiere: `Sulfate de sodium ou d'ammonium` | `Acide benzoique, sodium benzoate, tocopherol, benzyl benzoate` | `Acide chlorydrique, phosphorique, sorbique, potassium sorbate` | `Acide sulfurique` | `Acier/Fer` | `Alcool` | `Aluminium` | `Ammoniaque` | `Argent` | `Carbonate de calcium` | `Acide citrique, tartrique, nitrique` | `Acide sulfurique` | `Bicarbonate de soude/Sodium` | `Chlorure de sodium, Potassium` | `Chlore` | `Cuivre` | `Epoxy` | `Fibre de carbone/Graphite` | `Nickel` | `Or` | `Oxyde de zinc` | `PET` | `Peinture en bombre` | `Peinture en bombe` | `Peinture en pot` | `Platine (et famille)` | `Plomb` | `Résine` | `Savons, détergents et tensioactifs` | `Soude` | `Soufre` | `Titane` | `Vernis en bombe` | `Vernis en pot` | `Verre`
+      categorieMatiere: `Produits chimiques et alcool` | `Peinture/ Vernis/ Résines/Teinture/En` | `Plastiques` | `Métaux` | `Verre` | `Papeterie` | `Autres` | `Minéraux` | `Produits d'hygiène et nettoyage` | `Textile` | `Bois` | `Alimentaire`
+      mesureMatiere: `Litres` | `KG` | `Nombre`
       valeurMatiere: Nullable<number>
       valeurRecyclage: Nullable<number>
       CreatedBy: string
@@ -327,10 +327,10 @@ declare namespace Kapix {
     declare interface IBatiment {
       Id: number
       CreatedBy: string
-      lieuBatiment: Nullable<'Bâtiment industriel' | 'Chez vous' | 'Atelier/Boutique'>
+      lieuBatiment: Nullable<`Bâtiment industriel` | `Chez vous` | `Atelier/Boutique`>
       surfaceBatiment: Nullable<number>
       nbEntreprisesPartageLieu: Nullable<number>
-      classeEnergitique: Nullable<'A' | 'C' | 'D' | 'E' | 'G' | 'Je ne sais pas'>
+      classeEnergitique: Nullable<`A` | `C` | `D` | `E` | `G` | `Je ne sais pas`>
       consoElectrique: Nullable<number>
       ModifiedBy: Nullable<string>
       CreatedAt: Date
@@ -357,9 +357,9 @@ declare namespace Kapix {
       marketplaces: Nullable<number>
       aerien: Nullable<number>
       train: Nullable<number>
-      emplacementBoutique: 'En centre ville' | 'Zone périurbaine' | 'Zone rurale'
-      choixEmplacement: 'Proximité gare' | 'Proximité autoroute  et grand axes routiers' | 'Proximité de mon domicile' | 'Proximité fournisseur' | 'Lieu de passage fréquent' | 'Proximité aéroport'
-      accessibiliteBoutique: Nullable<'Près du bus/tram' | 'Parking voiture' | 'Parking vélo' | 'Près d'une gare'> | Nullable<Array<any>>
+      emplacementBoutique: `En centre ville` | `Zone périurbaine` | `Zone rurale`
+      choixEmplacement: `Proximité gare` | `Proximité autoroute  et grand axes routiers` | `Proximité de mon domicile` | `Proximité fournisseur` | `Lieu de passage fréquent` | `Proximité aéroport`
+      accessibiliteBoutique: Nullable<`Près du bus/tram` | `Parking voiture` | `Parking vélo` | `Près d'une gare`> | Nullable<Array<any>>
       raisonDeChangement: Nullable<string>
       CreatedBy: string
       ModifiedBy: Nullable<string>
@@ -393,10 +393,10 @@ declare namespace Kapix {
       Id: number
       decheterie: Nullable<boolean>
       plierSiege: Nullable<boolean>
-      tailleRemorque: Nullable<'Bagagère de moins de 500L' | 'Bagagère de plus de 500L' | 'Professionnel entre 800L et 1000L' | 'Professionnel de plus de 1000L'>
+      tailleRemorque: Nullable<`Bagagère de moins de 500L` | `Bagagère de plus de 500L` | `Professionnel entre 800L et 1000L` | `Professionnel de plus de 1000L`>
       allerRetourMois: Nullable<number>
       taillePoubelleOrganique: Nullable<number>
-      usagePoubelleOrganique: Nullable<'Usage professionnel' | 'Usage personnel' | 'Récupération par des services professionnel' | 'Don à une municipalité'>
+      usagePoubelleOrganique: Nullable<`Usage professionnel` | `Usage personnel` | `Récupération par des services professionnel` | `Don à une municipalité`>
       CompteIdCompte: number
       OptimisticConcurrencyVersion: number
       Compte: PartialEntity<Kapix.Entity.ICompte>
@@ -408,7 +408,7 @@ declare namespace Kapix {
     declare interface IMoyenTransport {
       Id: number
       nomTransport: string
-      carburantTransport: 'Electrique' | 'Biocarburant' | 'GPL/GNL' | 'Essence' | 'Gazole' | 'Transport en commun'
+      carburantTransport: `Electrique` | `Biocarburant` | `GPL/GNL` | `Essence` | `Gazole` | `Transport en commun`
       consoTransport: number
       voiture: Nullable<boolean>
       Concatenation12: Nullable<string>
@@ -497,8 +497,8 @@ declare namespace Kapix {
       userName: string
       imageUrl: string
       emailConfirmed: boolean
-      type: Nullable<'Admin' | 'Artisan' | 'Client'>
-      state: Nullable<null | 'premium' | 'blocked' | 'banned' | 'waiting'>
+      type: Nullable<`Admin` | `Artisan` | `Client`>
+      state: Nullable<null | `premium` | `blocked` | `banned` | `waiting`>
     }
     declare interface IApplication {
       name: string
